@@ -1,11 +1,32 @@
 
 import React  from 'react';
+import {StyledNav, StyledCircleForIcon} from './StyledNav.styled'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelopeOpenText, faHamburger } from "@fortawesome/free-solid-svg-icons";
+import '../../style/App.css'
+
 
 
 const Nav = () => {
 
     return (
-        <p>menu</p>
+        <StyledNav>
+          <StyledCircleForIcon> 
+               <FontAwesomeIcon  
+               className="iconFontAwesome" 
+               icon={faEnvelopeOpenText}
+               />
+           </StyledCircleForIcon>
+
+
+          <StyledCircleForIcon secondary>
+              <FontAwesomeIcon
+              className="iconFontAwesome" 
+              icon={faHamburger}
+              />
+            </StyledCircleForIcon>
+
+        </StyledNav>
     )
 
 }

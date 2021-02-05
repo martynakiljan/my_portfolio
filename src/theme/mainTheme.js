@@ -1,11 +1,7 @@
 export const theme = {
-  mainColor: '#F8F8FF',
-  secondaryMainColor: '#F8F8FF',
-  fioletColor: '#8A2BE2',
-  errorColor: '#B22222',
-  grey100: 'hsl(0, 0%, 96%)',
-  grey200: 'hsl(0, 0%, 90%)',
-  grey300: 'hsl(0, 0%, 70%)',
+  mainColor: '#fff',
+  mainColorPastel: '#FF9292',
+  mainColorGray: '#AAA9A9',
   black: 'hsl(0, 0%, 0%)',
   greyStronger: '#282828',
   light: 300,
@@ -17,5 +13,6 @@ export const theme = {
     m: '2.1rem',
     l: '2.4rem',
     xl: '4rem',
+    xxl: '100rem',
   },
 };

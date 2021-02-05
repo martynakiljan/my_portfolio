@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:300,600');
+  @import url('href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300;0,400;0,500;1,300&display=swap');
   
   *, *::before, *::after {
     box-sizing: border-box;
@@ -20,8 +20,8 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-size: 1.6rem;
-    font-family: "Montserrat", sans-serif;
-    background: #ebebeb;
+    font-family: 'Rubik', sans-serif;
+    background: white;
    
   }
 `;
