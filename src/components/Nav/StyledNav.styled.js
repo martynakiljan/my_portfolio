@@ -1,6 +1,7 @@
 import styled, {css} from 'styled-components';
 
 export const StyledNav = styled.div`
+  z-index: 1000;
   display: flex;
   position: fixed;
   top: 0;

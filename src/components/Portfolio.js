@@ -3,6 +3,7 @@ import Nav from './Nav/Nav'
 import { ThemeProvider } from 'styled-components';
 import {theme} from '../theme/mainTheme'
 import Header from './Header/Header.js'
+import AboutMe from './AboutMe/AboutMe'
 
 const Portfolio = () => {
 
@@ -12,6 +13,7 @@ const Portfolio = () => {
            <GlobalStyle/>
              <Nav/>
              <Header/>
+             <AboutMe/>
            </ThemeProvider>
         </>
     )

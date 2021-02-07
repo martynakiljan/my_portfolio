@@ -1,6 +1,6 @@
 import styled, {css} from 'styled-components';
 
-export const StyledMainTitle = styled.h1`
+export const StyledMainTitle = styled.div`
 
   color: ${({ theme }) => theme.mainColorPastel};
   position: relative;
@@ -11,6 +11,7 @@ export const StyledMainTitle = styled.h1`
   font-weight:bold;
   margin: 0;
   padding: 0;
+  height: 100%;
 
   
 
@@ -23,6 +24,7 @@ export const StyledMainTitle = styled.h1`
      font-size: ${({ theme }) => theme.xxl};
      text-transform: uppercase;
      width: 100%;
+     height: 100%;
      
     `}
 
@@ -45,6 +47,15 @@ export const StyledDot = styled.div`
   width: 40px;
   height: 40px;
   border-radius: 50%;
+`;
+
+export const StyledSecondaryTitle = styled.h3`
+  position: relative;
+  top: 180px;
+  width: 100%;
+  font-size: 20px;
+  font-weight:${({ theme }) => theme.light};
+  color: ${({ theme }) => theme.mainColorGray};
 `;
   
   

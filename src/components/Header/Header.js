@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {StyledMainTitle, StyledDot, StyledBoxDot} from './StyledMainTitle'
+import {StyledMainTitle, StyledDot, StyledBoxDot, StyledSecondaryTitle} from './StyledMainTitle'
 
 const Header = () => {
   return (
@@ -8,7 +8,16 @@ const Header = () => {
       
       <StyledMainTitle> he </StyledMainTitle>
   
-      <StyledMainTitle secondary> llo <StyledBoxDot><StyledDot/></StyledBoxDot> </StyledMainTitle>   
+      <StyledMainTitle secondary> llo <StyledBoxDot><StyledDot/></StyledBoxDot>
+    
+
+
+       </StyledMainTitle>  
+       <StyledSecondaryTitle>
+        I'm Martyna. I'm looking for a job as a junior programmer 
+        </StyledSecondaryTitle> 
+
+    
       </>
   )
 }
