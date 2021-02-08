@@ -1,24 +1,31 @@
 
 import React from 'react';
-import {StyledMainTitle, StyledDot, StyledBoxDot, StyledSecondaryTitle} from './StyledMainTitle'
+import {StyledMainTitle,  StyledSecondaryTitle, StyledBoxForSecondaryTitle,StyledDiv, StyledHeader} from './StyledMainTitle'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <>
+    <StyledHeader>
       
       <StyledMainTitle> he </StyledMainTitle>
   
-      <StyledMainTitle secondary> llo <StyledBoxDot><StyledDot/></StyledBoxDot>
-    
+        <StyledBoxForSecondaryTitle>
+        <StyledMainTitle secondary> llo   </StyledMainTitle> 
+        
+        <StyledDiv>
+        <FontAwesomeIcon   className="iconFontAwesomeCircle"  icon={faCircle}></FontAwesomeIcon>
+        </StyledDiv>
+  
+    </StyledBoxForSecondaryTitle>
 
 
-       </StyledMainTitle>  
        <StyledSecondaryTitle>
         I'm Martyna. I'm looking for a job as a junior programmer 
         </StyledSecondaryTitle> 
 
     
-      </>
+      </StyledHeader>
   )
 }
 

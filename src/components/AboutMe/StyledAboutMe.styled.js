@@ -1,23 +1,21 @@
 import styled from 'styled-components';
 
-export const StyledAboutMeTitle = styled.div`
-    /* position: relative;
-    top: 600px; */
-    display: flex;
-    margin-left: 20px;
-    color: ${({ theme }) => theme.mainColorPastel};
-    font-size: ${({ theme }) => theme.title};
-    margin: 0;
-    padding: 0;
-
+export const StyledAboutMeTitle = styled.h4` 
+  color: ${({ theme }) => theme.mainColorPastel};
+  font-size: ${({ theme }) => theme.title};
+     
 
 `;
-export const StyledNumber = styled.h2`
-  /* position: absolute; */
-  /* bottom: 0px; */
+export const StyledNumber = styled.h4`
   color: ${({ theme }) => theme.mainColorGray};
   font-size: ${({ theme }) => theme.fontSize.number};
   opacity: 0.4;
+
+`;
+
+export const StyledContainerAboutMe = styled.section`
+ display: flex; 
+ /* width: 100%; */
 
 
 `;

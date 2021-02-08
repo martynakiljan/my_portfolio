@@ -9,12 +9,12 @@ const Portfolio = () => {
 
     return (
         <>
-           <ThemeProvider theme={theme}>
-           <GlobalStyle/>
+         {/* <GlobalStyle/>
+           <ThemeProvider theme={theme}> */}
              <Nav/>
              <Header/>
              <AboutMe/>
-           </ThemeProvider>
+           {/* </ThemeProvider> */}
         </>
     )
 

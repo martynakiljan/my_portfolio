@@ -1,11 +1,13 @@
 import React from 'react';
-import {StyledAboutMeTitle,StyledNumber} from './StyledAboutMe.styled'
+import {StyledAboutMeTitle,StyledNumber, StyledContainerAboutMe} from './StyledAboutMe.styled'
 
 
 const AboutMe = () => {
 return (
 
-    <StyledAboutMeTitle> <StyledNumber>01</StyledNumber>About me</StyledAboutMeTitle>
+   <StyledContainerAboutMe>
+       <StyledNumber>01</StyledNumber>  <StyledAboutMeTitle>About me</StyledAboutMeTitle>
+   </StyledContainerAboutMe>
 )
 
 

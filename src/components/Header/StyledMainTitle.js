@@ -1,10 +1,8 @@
 import styled, {css} from 'styled-components';
 
-export const StyledMainTitle = styled.div`
+export const StyledMainTitle = styled.h1`
 
   color: ${({ theme }) => theme.mainColorPastel};
-  position: relative;
-  top: 200px;
   font-size: 100px;
   font-family: 'Rubik Mono One', sans-serif;
   text-transform: uppercase;
@@ -12,50 +10,53 @@ export const StyledMainTitle = styled.div`
   margin: 0;
   padding: 0;
   height: 100%;
-
-  
-
+  margin-top: 100px;
 
 
   ${({ secondary }) =>
     secondary &&
     css`
-     display: flex;
+
      font-size: ${({ theme }) => theme.xxl};
      text-transform: uppercase;
-     width: 100%;
+     width: 45%;
      height: 100%;
+     margin-top: 0px;
+  
+    
      
     `}
 
 `;
 
-export const StyledBoxDot = styled.div`
-position: relative;
-height: 100px;
-width: 100%;
 
-
-`;
-  
-
-export const StyledDot = styled.div`
-  position: absolute;
-  bottom: 0;
-  margin-left: 10px;
-  background-color: ${({ theme }) => theme.mainColorGray};
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-`;
 
 export const StyledSecondaryTitle = styled.h3`
-  position: relative;
-  top: 180px;
-  width: 100%;
+
+  width: 80%;
   font-size: 20px;
   font-weight:${({ theme }) => theme.light};
   color: ${({ theme }) => theme.mainColorGray};
+  margin-top: -5px;
+  
+`;
+  
+
+export const StyledBoxForSecondaryTitle = styled.div`
+
+  width: 100%;
+  display: flex;
+`;
+  
+
+export const StyledDiv = styled.div`
+  display: flex;
+  align-items: flex-end;
+  width: 20%;
+  height: 100px;
+`;
+export const StyledHeader = styled.section`
+  padding: 10px;
 `;
   
   

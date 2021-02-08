@@ -15,6 +15,7 @@ const Nav = () => {
                <FontAwesomeIcon  
                className="iconFontAwesome" 
                icon={faEnvelopeOpenText}
+               secondary
                />
            </StyledCircleForIcon>
 

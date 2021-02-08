@@ -1,8 +1,19 @@
 import Portfolio from './components/Portfolio'
+import { ThemeProvider } from 'styled-components';
+import {theme} from './theme/mainTheme'
+import GlobalStyle from '../src/theme/GlobalStyle'
 
 
 function App() {
-  return <Portfolio/>
+  return (
+    <>
+    <GlobalStyle/>
+       <ThemeProvider theme={theme}>
+         <Portfolio/>
+       </ThemeProvider>
+
+    </>   
+  )
 }
 
 export default App;
