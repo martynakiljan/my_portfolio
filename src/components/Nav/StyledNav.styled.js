@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 
 export const StyledNav = styled.div`
   z-index: 1000;
@@ -33,8 +33,8 @@ export const StyledCircleForIcon  = styled.div`
   justify-content: center;
   align-items: center;
   color: ${({ theme }) => theme.mainColorPastel};
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
   border: 4px solid #FF9292;
   border-radius: 50%;
   margin-left: 0px;

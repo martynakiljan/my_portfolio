@@ -15,12 +15,17 @@ export const GlobalStyle = createGlobalStyle`
   html {
     font-size: 62.5%; 
   }
+  *{
+    padding: 0;
+    margin: 0;
+  }
   
   body {
     padding: 0;
+    min-height: 400vh;
     margin: 0;
     font-size: 1.6rem;
-    font-family: 'Rubik MonoOne';
+    font-family: 'Rubik Mono One',sans-serif;
     background: white;
    
   }
