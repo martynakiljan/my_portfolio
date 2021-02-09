@@ -1,21 +1,9 @@
 import styled from 'styled-components';
 
-export const StyledAboutMeTitle = styled.h4` 
-  color: ${({ theme }) => theme.mainColorPastel};
-  margin-bottom: 50px;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: ${({ theme }) => theme.fontSize.title};
-     
-
-`
-
 
 export const StyledContainerAboutMe = styled.section`
  margin-top: 200px;
-
-
+ margin-bottom: 100px;
 `;
 
 export const StyledImage = styled.img.attrs(props => ({
@@ -28,6 +16,7 @@ export const StyledImage = styled.img.attrs(props => ({
  height: 200px;
  margin: 0 auto;
  border-radius: 50%;
+ background-size: cover;
 
   `
 

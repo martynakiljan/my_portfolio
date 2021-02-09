@@ -1,6 +1,7 @@
 import React from 'react';
-import {StyledAboutMeTitle, StyledContainerAboutMe, StyledImage,StyledTextAboutMe, StyledBoxIcon, StyledTextIcon} from './StyledAboutMe.styled'
+import { StyledContainerAboutMe, StyledImage,StyledTextAboutMe, StyledBoxIcon, StyledTextIcon} from './StyledAboutMe.styled'
 import img from '../../images/img.jpg'
+import Title from '../Titles/Title'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMountain, faBook, faPizzaSlice} from "@fortawesome/free-solid-svg-icons";
 
@@ -12,7 +13,7 @@ const AboutMe = () => {
 return (
 
    <StyledContainerAboutMe>
-        <StyledAboutMeTitle>About me</StyledAboutMeTitle>
+        <Title>About me</Title>
         <StyledImage src={img} alt='image 1'/>
         <StyledTextAboutMe>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.  </StyledTextAboutMe>
 
