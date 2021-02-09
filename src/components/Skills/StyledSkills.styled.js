@@ -2,8 +2,12 @@ import styled from 'styled-components';
 
 
 export const StyledBoxForSkills = styled.div`
-    display: flex;
     min-height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
 
 `;
 export const StyledInfoForSkills = styled.div`
