@@ -14,8 +14,17 @@ color: #FF9292;
   color: black
 }
 .iconFontAwesome--skill {
-  padding: 10px;
-  margin: 15px;
-  font-size: 70px;
+  font-size: 60px;
   color: #AAA9A9;
+  margin: 15px;
+}
+
+.svg {
+  font-size: 30px;
+}
+.iconFontAwesome--backToTop {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 10px;
+  
 }

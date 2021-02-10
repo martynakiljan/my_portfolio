@@ -9,6 +9,7 @@ font-weight:${({ theme }) => theme.light};
 color: ${({ theme }) => theme.mainColorGray};
 padding: 10px;
 margin-top: 10px;
+margin-bottom: 100px;
 
 `;
 export const StyledNumberOfProject = styled.h4`
@@ -25,5 +26,12 @@ export const StyledBoxForProject = styled.div`
 background-color: lightblue;
 width: 100%;
 height: 150px;
+
+`;
+export const StyledTextUnderProjects = styled.div`
+margin-top: 50px;
+text-align: center;
+width: 100%;
+
 
 `;

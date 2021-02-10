@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
   
   body {
     padding: 0;
-    min-height: 400vh;
+    min-height: 700vh;
     margin: 0;
     font-size: 1.6rem;
     font-family: 'Rubik Mono One',sans-serif;
