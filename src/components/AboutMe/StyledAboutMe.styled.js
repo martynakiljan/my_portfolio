@@ -41,6 +41,7 @@ export const StyledTextIcon = styled.p`
 
 width: 100%;
 text-align: center;
+margin-top: 60px;
 
 
 `;
