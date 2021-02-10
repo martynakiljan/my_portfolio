@@ -19,17 +19,17 @@ const Contact = () => {
             <StyledAnotherFormContact>
 
             <FontAwesomeIcon  
-               className="iconFontAwesome--form" 
+               className="iconFontAwesome--contact" 
                icon={faGithubAlt}
                secondary
             />
             <FontAwesomeIcon  
-                className="iconFontAwesome--form" 
+                className="iconFontAwesome--contact" 
                 icon={faLinkedin}
                 secondary
             />
             <FontAwesomeIcon  
-                className="iconFontAwesome--form" 
+                className="iconFontAwesome--contact" 
                 icon={faFacebook}
                 secondary
             />

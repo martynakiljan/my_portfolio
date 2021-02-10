@@ -49,7 +49,7 @@ const Form = () => {
          </StyledLabel>
 
 
-          <StyledTextArea name="description" value="This is a description." />
+          <StyledTextArea />
      </StyledForm>
     )
 }

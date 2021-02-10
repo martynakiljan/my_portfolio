@@ -59,8 +59,15 @@ export const StyledTextArea = styled.textarea`
     font-family: Monospace;
 
 `;
-export const StyledAnotherFormContact = styled.textarea`
+export const StyledAnotherFormContact = styled.div`
+
    display: flex;
+   justify-content: center;
+   width: 100%;
+   align-items: center;
+   margin-top: 50px;
+   
+
 
 `;
 
