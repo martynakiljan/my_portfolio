@@ -22,7 +22,9 @@ font-weight: bold;
 
 
 export const StyledBoxForProject = styled.div`
-
+display: flex;
+justify-content: center;
+align-items: center;
 background-color: lightblue;
 width: 100%;
 height: 150px;

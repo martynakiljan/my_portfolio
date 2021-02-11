@@ -34,8 +34,8 @@ export const StyledCircleForIcon  = styled.div`
   justify-content: center;
   align-items: center;
   color: ${({ theme }) => theme.mainColorPastel};
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   border: 4px solid #FF9292;
   border-radius: 50%;
   margin-left: 0px;
