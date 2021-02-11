@@ -10,9 +10,11 @@ export const StyledBoxForSkills = styled.div`
     padding: 50px;
 
 `;
-export const StyledInfoForSkills = styled.div`
-   font-size: 20px;
+export const StyledInfoForSkills = styled.p`
+   font-size: ${({ theme }) => theme.fontSize.text};
    width: 100%;
    text-align: center;
+   color: ${({ theme }) => theme.mainColorGray};
+   
 
 `;

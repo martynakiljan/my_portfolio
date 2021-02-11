@@ -1,27 +1,32 @@
 
 import React from 'react';
-import {StyledMainTitle,  StyledSecondaryTitle,StyledDiv, StyledLine, StyledDot} from './StyledMainTitle'
+import {StyledMainTitle,  StyledSecondaryTitle,StyledDiv, StyledLine, StyledDot, StyledHeader} from './StyledMainTitle'
+import { Typewriter } from 'react-typewriting-effect'
+
 
 
 const Header = () => {
   return (
 
-<>
-       <StyledMainTitle> he </StyledMainTitle>
+      <StyledHeader>
+            <StyledMainTitle> he </StyledMainTitle>
 
-    <StyledDiv>
-        <StyledMainTitle secondary> llo </StyledMainTitle>   <StyledDot/> 
-    </StyledDiv>
+          <StyledDiv>
+              <StyledMainTitle secondary> llo </StyledMainTitle>   <StyledDot/> 
+          </StyledDiv>
+
+          <Typewriter
+            string='I`m Martyna and I`m looking for my first job junior fron end developer!'
+            delay={100}
+            cursor='|'
+            >
+            </Typewriter>
 
 
-    <StyledSecondaryTitle>
-         I'm Martyna. I'm looking for a job as a junior programmer 
-    </StyledSecondaryTitle> 
+          <StyledLine/>
 
-    <StyledLine/>
-
-   
-</>
+        
+      </StyledHeader>
 
 
   )

@@ -7,8 +7,9 @@ export const StyledFooterBox = styled.footer`
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 20vh;
+    min-height: 10vh;
 `;
 export const StyledFooterTitle= styled.p`
+font-size: 17px;
  
 `;

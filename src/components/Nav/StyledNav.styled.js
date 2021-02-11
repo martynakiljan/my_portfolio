@@ -18,7 +18,7 @@ export const StyledNav = styled.nav`
 export const FontAwesomeIcon  = styled.a`
   color: ${({ theme }) => theme.mainColorGray};
   width: 100%;
-  font-size: 50px;
+  font-size: 60px;
   background: red;
   width: 15px;
   border: 2px solid #FF9292;

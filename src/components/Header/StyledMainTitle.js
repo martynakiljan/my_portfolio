@@ -1,13 +1,25 @@
 import styled, {css} from 'styled-components';
 
+
+export const StyledHeader = styled.header`
+
+ padding: 20px;
+  
+  
+`;
+
+
+
+
+
 export const StyledMainTitle = styled.h1`
 
   color: ${({ theme }) => theme.mainColorPastel};
-  font-size: 100px;
-  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 120px;
   text-transform: uppercase;
   font-weight:bold;
-  margin-top: 100px;
+  margin-top: 110px;
+
 
 
   ${({ secondary }) =>
@@ -33,7 +45,10 @@ export const StyledSecondaryTitle = styled.h3`
   padding: 10px;
   margin-top: 10px;
   
+  
 `;
+
+
   
 
   
@@ -41,25 +56,25 @@ export const StyledSecondaryTitle = styled.h3`
 export const StyledDiv = styled.div`
   display: flex;
   width: 100%;
-  height: 100px;
+
 `;
 
 
 
 
 export const StyledDot = styled.div`
-width: 40px;
-height: 40px;
+width: 35px;
+height: 35px;
 border-radius: 50%;
-background-color: #AAA9A9;
-margin-top: 58px;
+background-color: ${({ theme }) => theme.mainColorGray};
+margin-top: 78px;
 
 `;
 export const StyledLine = styled.div`
 width: 80%;
 height: 2px;
 margin:  0 auto;
-background-color: #AAA9A9;
+background-color: ${({ theme }) => theme.mainColorGray};
 margin-top: 100px;
 
 `;

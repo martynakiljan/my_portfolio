@@ -64,14 +64,6 @@ const MenuElem = styled.nav`
           background: white;
       `}
 
-  /* &[aria-expanded="true"] ${MenuCloseElem} {
-    z-index: 1001;
-  }
-
-  &[aria-expanded="true"] ${MenuListElem} {
-    display: relative;
-    z-index: 1000;
-  } */
 
 
 
@@ -79,7 +71,7 @@ const MenuElem = styled.nav`
     display: block;
     padding: 0.75em 15px;
     line-height: 1em;
-    font-size: 1em;
+    font-size: 1.5em;
     color: black;
     text-decoration: none;
 
@@ -90,7 +82,7 @@ const MenuToggleElem = styled.a`
     display: inline-block;
     padding: 0.75em 15px;
     line-height: 1em;
-    font-size: 1em;
+    font-size: 1.5em;
     color: #333;
 
     &:hover,

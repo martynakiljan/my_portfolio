@@ -19,7 +19,7 @@ const Menu = ({ isOpen, onClose }) => {
                 isOpen={isOpen}
             >
                 <FontAwesomeIcon  
-               className="iconFontAwesome--skill" 
+               className="iconFontAwesome--menu" 
                icon={faTimesCircle}
                secondary
                 />

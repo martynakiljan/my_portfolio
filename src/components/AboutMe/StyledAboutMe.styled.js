@@ -4,6 +4,8 @@ import styled from 'styled-components';
 export const StyledContainerAboutMe = styled.section`
  margin-top: 200px;
  margin-bottom: 100px;
+ color: ${({ theme }) => theme.mainColorGray};
+ font-size: ${({ theme }) => theme.fontSize.text};
 `;
 
 export const StyledImage = styled.img.attrs(props => ({
@@ -42,6 +44,7 @@ export const StyledTextIcon = styled.p`
 width: 100%;
 text-align: center;
 margin-top: 60px;
+font-size: ${({ theme }) => theme.fontSize.text};
 
 
 `;

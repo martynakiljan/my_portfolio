@@ -24,7 +24,7 @@ const Nav = () => {
             <StyledBoxForIcons>
                     <StyledCircleForIcon> 
                         <FontAwesomeIcon  
-                        className="iconFontAwesome" 
+                        className="iconFontAwesome--nav" 
                         icon={faEnvelopeOpenText}
                         secondary
                         />
@@ -33,7 +33,7 @@ const Nav = () => {
 
                    <StyledCircleForIcon secondary>
                         <FontAwesomeIcon
-                        className="iconFontAwesome" 
+                        className="iconFontAwesome--nav" 
                         icon={faHamburger}
                         onClick={handleMenu}
                         />

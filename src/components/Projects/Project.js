@@ -9,7 +9,7 @@ const Project = () => {
         <StyledBoxForProject>
 
             <FontAwesomeIcon  
-               className="iconFontAwesome--projecy" 
+               className="iconFontAwesome--project" 
                icon={faLaptopCode}
                secondary
             />

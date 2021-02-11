@@ -1,6 +1,11 @@
-.iconFontAwesome {
-  color: #948F84;
-  font-size: 40px;
+root {
+  --main-color: red;
+}
+  
+  
+  .iconFontAwesome--nav {
+   color: 	#505050;
+    font-size: 40px;
 
 }
 
@@ -12,17 +17,14 @@ color: #FF9292;
 
 .fa-js-square {
   font-size: 20px;
-  color: black
+  color: var(--main-color)
 }
 .iconFontAwesome--skill {
   font-size: 60px;
-  color: #AAA9A9;
+  color: var(--main-color);
   margin: 15px;
 }
 
-.svg {
-  font-size: 30px;
-}
 .iconFontAwesome--backToTop {
   color: white;
   font-size: 25px;
@@ -39,10 +41,13 @@ color: #FF9292;
 }
 
 .iconFontAwesome--project {
-  font-size: 30px;
-  margin: 10px;  
+  font-size: 45px;
+  margin: 20px;  
 }
 
-.sr-only {
-  color: black;
+.iconFontAwesome--menu {
+  font-size: 35px;
+
+   
 }
+

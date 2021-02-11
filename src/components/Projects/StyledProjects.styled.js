@@ -34,6 +34,7 @@ export const StyledTextUnderProjects = styled.div`
 margin-top: 50px;
 text-align: center;
 width: 100%;
+font-size: ${({ theme }) => theme.fontSize.text};
 
 
 `;
