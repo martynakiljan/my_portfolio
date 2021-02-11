@@ -36,30 +36,12 @@ export const StyledMainTitle = styled.h1`
 
 
 
-export const StyledSecondaryTitle = styled.h3`
-
-  width: 80%;
-  font-size: 20px;
-  font-weight:${({ theme }) => theme.light};
-  color: ${({ theme }) => theme.mainColorGray};
-  padding: 10px;
-  margin-top: 10px;
-  
-  
-`;
-
-
-  
-
-  
 
 export const StyledDiv = styled.div`
   display: flex;
   width: 100%;
 
 `;
-
-
 
 
 export const StyledDot = styled.div`

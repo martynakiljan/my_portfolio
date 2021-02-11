@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const StyledBoxForSkills = styled.div`
+export const StyledBoxForSkills = styled.section`
     min-height: 70vh;
     display: flex;
     flex-wrap: wrap;

@@ -2,10 +2,13 @@ import React from 'react';
 import {StyledBoxForSkills, StyledInfoForSkills} from './StyledSkills.styled'
 import Title from '../Titles/Title'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faNpm, faJs, faCss3Alt, faGithub, faHtml5 , faReact, faBootstrap} from "@fortawesome/free-brands-svg-icons"
-import { faBox, faTasks, faGraduationCap, faRunning, faLaptop, faExclamationCircle, faTrophy } from "@fortawesome/free-solid-svg-icons";
+// import { faNpm, faJs, faCss3Alt, faGithub, faHtml5 , faReact, faBootstrap} from "@fortawesome/free-brands-svg-icons"
+// import { faBox, faTasks, faGraduationCap, faRunning, faLaptop, faExclamationCircle, faTrophy } from "@fortawesome/free-solid-svg-icons";
+import IconsArray from '../../Icons/IconsArray'
 
 const Skills = () => {
+
+
     return (
         <>
         <Title>My hard skills</Title>
@@ -15,6 +18,14 @@ const Skills = () => {
         <StyledBoxForSkills>
 
 
+              {IconsArray.map((icon) => {
+                      <FontAwesomeIcon  
+                      className="iconFontAwesome--skill" 
+                      icon={icon}
+                     /> 
+              })}
+
+{/* 
          <FontAwesomeIcon  
                className="iconFontAwesome--skill" 
                icon={faNpm}
@@ -68,7 +79,7 @@ const Skills = () => {
 
         
 
-        <Title>My soft skills</Title>
+      //   <Title>My soft skills</Title>
         <StyledBoxForSkills>
         <FontAwesomeIcon  
                className="iconFontAwesome--skill" 
@@ -95,7 +106,7 @@ const Skills = () => {
                className="iconFontAwesome--skill" 
                icon={faTrophy}
                secondary
-         />  
+         />   */}
         </StyledBoxForSkills>
        
         
