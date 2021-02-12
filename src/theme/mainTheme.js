@@ -7,7 +7,7 @@ export const theme = {
   light: 300,
   bold: 600,
   fontSize: {
-    text: '2.4rem',
+    text: '1.5rem',
     title: '3.4rem',
     number: '6rem',
    

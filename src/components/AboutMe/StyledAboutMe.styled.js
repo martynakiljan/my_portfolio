@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 
 export const StyledContainerAboutMe = styled.section`
- margin-top: 200px;
  margin-bottom: 100px;
  color: ${({ theme }) => theme.mainColorGray};
  font-size: ${({ theme }) => theme.fontSize.text};

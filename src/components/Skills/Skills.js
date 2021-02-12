@@ -5,11 +5,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faNpm, faJs, faCss3Alt, faGithub, faHtml5 , faReact, faBootstrap} from "@fortawesome/free-brands-svg-icons"
 // import { faBox, faTasks, faGraduationCap, faRunning, faLaptop, faExclamationCircle, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import IconsArray from '../../Icons/IconsArray'
+import Icon from './Icon'
 
 const Skills = () => {
 
-
-    return (
+const renderIcons = () => {
+      return IconsArray.map(icon => {
+            return (
+                  <Icon
+                  icon = {icon}
+                  className="iconFontAwesome--skill" 
+                  />
+            )
+      })
+}   
+ 
+ return (
         <>
         <Title>My hard skills</Title>
         <StyledInfoForSkills>click the icon!</StyledInfoForSkills>
@@ -17,13 +28,7 @@ const Skills = () => {
 
         <StyledBoxForSkills>
 
-
-              {IconsArray.map((icon) => {
-                      <FontAwesomeIcon  
-                      className="iconFontAwesome--skill" 
-                      icon={icon}
-                     /> 
-              })}
+            {renderIcons()}
 
 {/* 
          <FontAwesomeIcon  

@@ -73,7 +73,8 @@ export const StyledAnotherFormContact = styled.div`
    width: 100%;
    padding: 10px;
    align-items: center;
-   margin-top: 50px;
+   padding: 30px;
+   height: 100%;
    font-size: ${({ theme }) => theme.fontSize.text};
    
 
