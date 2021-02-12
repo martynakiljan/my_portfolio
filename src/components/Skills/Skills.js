@@ -1,9 +1,12 @@
 import React from 'react';
-import {StyledBoxForSkills, StyledInfoForSkills} from './StyledSkills.styled'
 import Title from '../Titles/Title'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import IconsArrayHardSkills from '../Skills/Icons/IconsArrayHardSkills'
 import IconsArraySoftSkills from '../Skills/Icons/IconsArraySoftSkills'
+import {
+    SkillsSection, 
+    InfoForSkills
+} from './StyledSkillsContainer.styled'
 
 const Skills = () => {
 
@@ -32,19 +35,19 @@ const Skills = () => {
  
  return (
         <>
-       <StyledBoxForSkills>
+       <SkillsSection>
 
        <Title>My hard skills</Title>
 
-        <StyledInfoForSkills>click the icon!</StyledInfoForSkills>
+        <InfoForSkills>click the icon!</InfoForSkills>
 
             {renderIconsHardSkills()}
 
-      <Title>My soft skills</Title>
+       <Title>My soft skills</Title>
 
             {renderIconsSoftSkills()}
 
-       </StyledBoxForSkills>
+       </SkillsSection>
 
 
        

@@ -1,18 +1,12 @@
 import styled, {css} from 'styled-components';
 
 
-export const StyledHeader = styled.header`
-
+export const HeaderSection = styled.header`
  padding: 20px;
-  
-  
 `;
 
 
-
-
-
-export const StyledMainTitle = styled.h1`
+export const MainTitle = styled.h1`
 
   color: ${({ theme }) => theme.mainColorPastel};
   font-size: 120px;
@@ -35,16 +29,14 @@ export const StyledMainTitle = styled.h1`
 `;
 
 
-
-
-export const StyledDiv = styled.div`
+export const Div = styled.div`
   display: flex;
   width: 100%;
 
 `;
 
 
-export const StyledDot = styled.div`
+export const Dot = styled.div`
 width: 35px;
 height: 35px;
 border-radius: 50%;
@@ -52,7 +44,7 @@ background-color: ${({ theme }) => theme.mainColorGray};
 margin-top: 78px;
 
 `;
-export const StyledLine = styled.div`
+export const DecorativeLine = styled.div`
 width: 80%;
 height: 2px;
 margin:  0 auto;

@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 
-export const StyledContainerAboutMe = styled.section`
+export const AboutMeSection = styled.section`
  margin-bottom: 100px;
  color: ${({ theme }) => theme.mainColorGray};
  font-size: ${({ theme }) => theme.fontSize.text};
 `;
 
-export const StyledImage = styled.img.attrs(props => ({
+export const Image = styled.img.attrs(props => ({
   src: props.src,
 }))`
  display: flex;
@@ -21,13 +21,13 @@ export const StyledImage = styled.img.attrs(props => ({
 
   `
 
-export const StyledTextAboutMe = styled.p`
+export const TextAboutMe = styled.p`
 padding: 40px;
 text-align: justify;
 `;
 
 
-export const StyledBoxIcon = styled.section`
+export const BoxIcon = styled.section`
 
 display:flex;
 flex-direction: column;
@@ -38,7 +38,7 @@ min-height: 50vh;
 
 `;
 
-export const StyledTextIcon = styled.p`
+export const TextIcon = styled.p`
 
 width: 100%;
 text-align: center;

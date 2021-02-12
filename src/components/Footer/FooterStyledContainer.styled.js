@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const StyledFooterBox = styled.footer`
+export const FooterSection = styled.footer`
     background-color: lightpink;
     display: flex;
     justify-content: center;
@@ -9,7 +9,8 @@ export const StyledFooterBox = styled.footer`
     width: 100%;
     min-height: 10vh;
 `;
-export const StyledFooterTitle= styled.p`
+
+export const FooterTitle= styled.p`
 font-size: 17px;
  
 `;

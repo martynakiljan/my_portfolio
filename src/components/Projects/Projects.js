@@ -1,7 +1,11 @@
 import React from 'react';
 import Title from '../Titles/Title'
-import {StyledContainerProjects, StyledNumberOfProject, StyledTextUnderProjects} from './StyledProjects.styled'
 import Project from './Project'
+import {
+  ProjectsSection, 
+  NumberOfProject,
+  TextUnderProjects
+ } from './StyledProjectsContainer.styled'
 
 
 
@@ -9,23 +13,23 @@ const Projects = () => {
     return (
      <>
             <Title>My projects</Title>
-            <StyledContainerProjects>
+            <ProjectsSection>
 
-              <StyledNumberOfProject>1</StyledNumberOfProject>
+              <NumberOfProject>1</NumberOfProject>
               <Project/>
 
-              <StyledNumberOfProject>2</StyledNumberOfProject>
+              <NumberOfProject>2</NumberOfProject>
               <Project/>
               
-              <StyledNumberOfProject>3</StyledNumberOfProject>
+              <NumberOfProject>3</NumberOfProject>
               <Project/>
 
-              <StyledNumberOfProject>4</StyledNumberOfProject>
+              <NumberOfProject>4</NumberOfProject>
               <Project/>
-              <StyledTextUnderProjects>too little ? Come to my github!</StyledTextUnderProjects>
+              <TextUnderProjects>too little ? Come to my github!</TextUnderProjects>
 
 
-            </StyledContainerProjects>
+            </ProjectsSection>
      </>
     )
 }

@@ -1,14 +1,17 @@
 import React from 'react';
-import {StyledFooterBox, StyledFooterTitle} from './FooterStyledContainer.styled'
+import {
+    FooterSection, 
+    FooterTitle
+} from './FooterStyledContainer.styled'
 
 const Footer = () => {
 
     return (
 
-     <StyledFooterBox>
-        <StyledFooterTitle>Made with by ♥ Martyna
-        </StyledFooterTitle>
-     </StyledFooterBox>
+     <FooterSection>
+        <FooterTitle>Made with by ♥ Martyna
+        </FooterTitle>
+     </FooterSection>
 
     )
 }

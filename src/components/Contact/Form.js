@@ -1,56 +1,54 @@
 
 import React from 'react';
-import {StyledForm, StyledInput, StyledLabel, StyledTextArea} from './StyledContactContainer.styled'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCommentDots, faPencilAlt, faAt} from "@fortawesome/free-solid-svg-icons";
-
+import {
+     FormSection,
+     Input, 
+     Label, 
+     TextArea
+ } from './StyledContactContainer.styled'
 
 
 
 
 const Form = () => {
     return (
-     <StyledForm>
+     <FormSection>
 
-
-
-          <StyledLabel>
+          <Label>
                 <FontAwesomeIcon  
                 className="iconFontAwesome--form" 
                 icon={faPencilAlt}
-                econdary
+                secondary
                 />
                 Name:
-          </StyledLabel>
-          <StyledInput></StyledInput>
+          </Label>
+          <Input></Input>
         
-          <StyledLabel>
-              
-        <FontAwesomeIcon  
+          <Label>
+               <FontAwesomeIcon  
                className="iconFontAwesome--form" 
                icon={faAt}
                secondary
-         />
-              Email:
-         </StyledLabel>
-              <StyledInput></StyledInput>
+               />
+                Email:
+               </Label>
+          <Input></Input>
 
 
 
-         <StyledLabel>
-
-        <FontAwesomeIcon  
-               className="iconFontAwesome--form" 
+         <Label>
+               <FontAwesomeIcon  
+               lassName="iconFontAwesome--form" 
                icon={faCommentDots}
                secondary
-         />
-         Your message:
+              />
+              Your message:
          
-         </StyledLabel>
-
-
-          <StyledTextArea />
-     </StyledForm>
+          </Label>
+          <TextArea />
+     </FormSection>
     )
 }
 

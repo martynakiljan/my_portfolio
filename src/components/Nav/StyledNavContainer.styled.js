@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledNav = styled.nav`
+export const NavSection = styled.nav`
   z-index: 1000;
   display: flex;
   position: sticky;
@@ -28,7 +28,7 @@ export const FontAwesomeIcon  = styled.a`
 
 `;
 
-export const StyledCircleForIcon  = styled.div`
+export const CircleForIcon  = styled.div`
   
   display: flex;
   justify-content: center;
@@ -45,7 +45,7 @@ export const StyledCircleForIcon  = styled.div`
 
 `;
   
-export const StyledBoxForIcons  = styled.div`
+export const BoxForIcons  = styled.div`
   display: flex;
   width: 60%;
   justify-content: space-around;
@@ -55,7 +55,7 @@ export const StyledBoxForIcons  = styled.div`
 
 `;
   
-export const  StyledButtonBackToTop = styled.div`
+export const  ButtonBackToTop = styled.div`
     position: fixed;
     bottom: -48px;
     right: -50px;

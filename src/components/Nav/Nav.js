@@ -1,11 +1,15 @@
 
 import React, {useState} from 'react';
-import {StyledNav, StyledCircleForIcon,StyledBoxForIcons, StyledButtonBackToTop} from './StyledNav.styled'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeOpenText, faHamburger, faChevronUp} from "@fortawesome/free-solid-svg-icons";
 import '../../style/App.css'
 import Menu from './Menu'
-
+import {
+     NavSection,
+     CircleForIcon,
+     BoxForIcons, 
+     ButtonBackToTop
+    } from './StyledNavContainer.styled'
 
 
 
@@ -20,27 +24,27 @@ const Nav = () => {
     };
 
     return (
-        <StyledNav>
-            <StyledBoxForIcons>
-                    <StyledCircleForIcon> 
+        <NavSection>
+            <BoxForIcons>
+                    <CircleForIcon> 
                         <FontAwesomeIcon  
                         className="iconFontAwesome--nav" 
                         icon={faEnvelopeOpenText}
                         secondary
                         />
-                   </StyledCircleForIcon>
+                   </CircleForIcon>
                  
 
-                   <StyledCircleForIcon secondary>
+                   <CircleForIcon secondary>
                         <FontAwesomeIcon
                         className="iconFontAwesome--nav" 
                         icon={faHamburger}
                         onClick={handleMenu}
                         />
-                    </StyledCircleForIcon>
+                    </CircleForIcon>
                     <Menu onClose={handleMenu} isOpen={isOpen} />
 
-                    <StyledButtonBackToTop>
+                    <ButtonBackToTop>
                         <FontAwesomeIcon
                         className="iconFontAwesome--backToTop" 
                         icon={faChevronUp}
@@ -48,10 +52,10 @@ const Nav = () => {
                         />
                         
                         
-                    </StyledButtonBackToTop>
+                    </ButtonBackToTop>
 
-            </StyledBoxForIcons>
-        </StyledNav>
+            </BoxForIcons>
+        </NavSection>
     )
 
 }

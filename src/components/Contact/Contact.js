@@ -1,22 +1,26 @@
 
 import React from 'react';
 import Title from '../Titles/Title'
-import {StyledTextForContact, StyledAnotherFormContact} from './StyledContactContainer.styled'
 import Form from './Form'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faFacebook, faGithubAlt, faLinkedin} from "@fortawesome/free-brands-svg-icons"
+import {
+    TextForContact,
+    AnotherFormContact,
+    ContactSection
+    } from './StyledContactContainer.styled'
 
 
 
 const Contact = () => {
     return (
-     <>
+     <ContactSection>
             <Title>Contact</Title>
-            <StyledTextForContact>I will be very pleased if you contact me! </StyledTextForContact>
+            <TextForContact>I will be very pleased if you contact me! </TextForContact>
 
             <Form/>
-            <StyledTextForContact> or </StyledTextForContact>
-            <StyledAnotherFormContact>
+            <TextForContact> or </TextForContact>
+            <AnotherFormContact>
 
             <FontAwesomeIcon  
                className="iconFontAwesome--contact" 
@@ -34,12 +38,11 @@ const Contact = () => {
                 secondary
             />
                 
-            </StyledAnotherFormContact>
+            </AnotherFormContact>
 
-
-        
+  
           
-     </>
+     </ContactSection>
     )
 }
 

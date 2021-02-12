@@ -1,48 +1,56 @@
 import React from 'react';
-import { StyledContainerAboutMe, StyledImage,StyledTextAboutMe, StyledBoxIcon, StyledTextIcon} from './StyledAboutMe.styled'
 import img from '../../images/img.jpg'
 import Title from '../Titles/Title'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMountain, faBook, faPizzaSlice} from "@fortawesome/free-solid-svg-icons";
-
-
+import {
+      AboutMeSection,
+      Image,
+      TextAboutMe,
+      BoxIcon,
+      TextIcon
+} from './StyledAboutMeContainer.styled.js'
 
 
 
 const AboutMe = () => {
+
+
+
+
 return (
 
-   <StyledContainerAboutMe>
+   <AboutMeSection>
         <Title>About me</Title>
-        <StyledImage src={img} alt='image 1'/>
-        <StyledTextAboutMe>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.  </StyledTextAboutMe>
+        <Image src={img} alt='image 1'/>
+        <TextAboutMe>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.  </TextAboutMe>
 
-        <StyledBoxIcon>
+        <BoxIcon>
 
         <FontAwesomeIcon  
                className="iconFontAwesome--aboutMe" 
                icon={faMountain}
                secondary
          />
-         <StyledTextIcon>because it is pain, but becaus</StyledTextIcon>
+         <TextIcon>because it is pain, but becaus</TextIcon>
 
         <FontAwesomeIcon  
                className="iconFontAwesome--aboutMe" 
                icon={faPizzaSlice}
                secondary
          />
-         <StyledTextIcon>because it is pain, but becaus</StyledTextIcon>
+         <TextIcon>because it is pain, but becaus</TextIcon>
 
         <FontAwesomeIcon  
                className="iconFontAwesome--aboutMe" 
                icon={faBook}
                secondary
          />
-       <StyledTextIcon>because it is pain, but becaus</StyledTextIcon>
+       <TextIcon>because it is pain, but becaus</TextIcon>
 
 
-        </StyledBoxIcon>
-   </StyledContainerAboutMe>
+        </BoxIcon>
+   </AboutMeSection>
 )
 
 

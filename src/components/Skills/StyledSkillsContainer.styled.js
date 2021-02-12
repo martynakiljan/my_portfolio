@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const StyledBoxForSkills = styled.section`
+export const SkillsSection = styled.section`
     min-height: 70vh;
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +10,7 @@ export const StyledBoxForSkills = styled.section`
     padding: 50px;
 
 `;
-export const StyledInfoForSkills = styled.p`
+export const InfoForSkills = styled.p`
    font-size: ${({ theme }) => theme.fontSize.text};
    width: 100%;
    text-align: center;

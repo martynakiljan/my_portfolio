@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const StyledContainerProjects = styled.section`
+export const ProjectsSection = styled.section`
 
 width: 100%;
 font-size: 20px;
@@ -12,7 +12,7 @@ margin-top: 10px;
 margin-bottom: 100px;
 
 `;
-export const StyledNumberOfProject = styled.h4`
+export const NumberOfProject = styled.h4`
 
 font-size: ${({ theme }) => theme.fontSize.number};
 opacity: 0.5;
@@ -21,7 +21,7 @@ font-weight: bold;
 `;
 
 
-export const StyledBoxForProject = styled.div`
+export const BoxForProject = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
@@ -30,7 +30,7 @@ width: 100%;
 height: 150px;
 
 `;
-export const StyledTextUnderProjects = styled.div`
+export const TextUnderProjects = styled.div`
 margin-top: 50px;
 text-align: center;
 width: 100%;

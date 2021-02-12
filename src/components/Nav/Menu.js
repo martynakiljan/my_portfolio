@@ -8,7 +8,7 @@ import {
     MenuListItemElem,
     MenuLinkElem,
     MenuCloseElem
-} from './Menu.styles';
+} from './MenuContainer.styled';
 
 const Menu = ({ isOpen, onClose }) => {
     return (
@@ -18,11 +18,12 @@ const Menu = ({ isOpen, onClose }) => {
                 onClick={onClose}
                 isOpen={isOpen}
             >
-                <FontAwesomeIcon  
+            <FontAwesomeIcon  
                className="iconFontAwesome--menu" 
                icon={faTimesCircle}
                secondary
-                />
+            />
+            
             </MenuCloseElem>
             <MenuListElem isOpen={isOpen}>
                 <MenuListItemElem>

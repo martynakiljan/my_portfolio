@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 
-export const StyledTextForContact = styled.h4`
+export const TextForContact = styled.h4`
 width: 100%;
 text-align: center;
 margin-top: 60px;
@@ -13,7 +13,7 @@ font-size: ${({ theme }) => theme.fontSize.text};
 
 `;
 
-export const StyledForm = styled.form`
+export const FormSection = styled.form`
 display: flex;
 flex-direction: column;
 justify-content: space-around;
@@ -28,10 +28,15 @@ margin-bottom: 50px;
 
 
 `;
+export const ContactSection = styled.section`
+width: 100%;
+
+
+`;
 
 
 
-export const StyledLabel = styled.label`
+export const Label = styled.label`
 display: block;
 padding: 20px 0 5px;
 width: 80%;
@@ -41,7 +46,7 @@ color: ${({ theme }) => theme.mainColorGray};
 
 
 `;
-export const StyledInput = styled.input`
+export const Input = styled.input`
     display: block;
     padding: 5px 10px;
     min-width: 80%;
@@ -53,7 +58,7 @@ export const StyledInput = styled.input`
     color: ${({ theme }) => theme.mainColorGray};
 
 `;
-export const StyledTextArea = styled.textarea`
+export const TextArea = styled.textarea`
     display: block;
     padding: 5px 10px;
     min-width: 80%;
@@ -66,7 +71,7 @@ export const StyledTextArea = styled.textarea`
     font-family: Monospace;
 
 `;
-export const StyledAnotherFormContact = styled.div`
+export const AnotherFormContact = styled.div`
 
    display: flex;
    justify-content: center;
