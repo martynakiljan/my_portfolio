@@ -7,8 +7,9 @@ import {faFacebook, faGithubAlt, faLinkedin} from "@fortawesome/free-brands-svg-
 import {
     TextForContact,
     AnotherFormContact,
-    ContactSection
-    } from './StyledContactContainer.styled'
+    ContactSection,
+    StyledLink
+} from './StyledContactContainer.styled'
 
 
 
@@ -22,21 +23,32 @@ const Contact = () => {
             <TextForContact> or </TextForContact>
             <AnotherFormContact>
 
-            <FontAwesomeIcon  
-               className="iconFontAwesome--contact" 
-               icon={faGithubAlt}
-               secondary
+
+         <StyledLink href="https://github.com/martynakil">
+         <FontAwesomeIcon 
+            className="iconFontAwesome--contact" 
+            icon={faGithubAlt}
+            secondary
             />
-            <FontAwesomeIcon  
-                className="iconFontAwesome--contact" 
-                icon={faLinkedin}
-                secondary
+        </StyledLink>
+
+
+          <StyledLink href="https://www.linkedin.com/in/martyna-kiljan-03a7a71a9/">
+         <FontAwesomeIcon  
+              className="iconFontAwesome--contact" 
+              icon={faLinkedin}
+              secondary
             />
+         </StyledLink>
+
+
+          <StyledLink href="https://www.facebook.com/martyna.kiljan/">
             <FontAwesomeIcon  
-                className="iconFontAwesome--contact" 
-                icon={faFacebook}
-                secondary
+              className="iconFontAwesome--contact" 
+              icon={faFacebook}
+              secondary
             />
+          </StyledLink>
                 
             </AnotherFormContact>
 

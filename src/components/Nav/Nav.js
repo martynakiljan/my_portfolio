@@ -1,17 +1,16 @@
 
 import React, {useState} from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelopeOpenText, faHamburger, faChevronUp} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelopeOpenText, faHamburger} from "@fortawesome/free-solid-svg-icons";
 import '../../style/App.css'
 import Menu from './Menu'
 import {
      NavSection,
      CircleForIcon,
      BoxForIcons, 
-     ButtonBackToTop
     } from './StyledNavContainer.styled'
 
-
+import ButtonBackToTop from './ButtonBackToTop'
 
 const Nav = () => {
 
@@ -26,11 +25,12 @@ const Nav = () => {
     return (
         <NavSection>
             <BoxForIcons>
-                    <CircleForIcon> 
+                    <CircleForIcon href="#contact"> 
                         <FontAwesomeIcon  
                         className="iconFontAwesome--nav" 
                         icon={faEnvelopeOpenText}
                         secondary
+                        href="#contact"
                         />
                    </CircleForIcon>
                  
@@ -44,16 +44,8 @@ const Nav = () => {
                     </CircleForIcon>
                     <Menu onClose={handleMenu} isOpen={isOpen} />
 
-                    <ButtonBackToTop>
-                        <FontAwesomeIcon
-                        className="iconFontAwesome--backToTop" 
-                        icon={faChevronUp}
-                            
-                        />
-                        
-                        
-                    </ButtonBackToTop>
-
+                        <ButtonBackToTop/>
+            
             </BoxForIcons>
         </NavSection>
     )

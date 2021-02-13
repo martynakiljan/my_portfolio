@@ -85,5 +85,11 @@ export const AnotherFormContact = styled.div`
 
 
 `;
+export const StyledLink = styled.a`
+
+  color: black;
+
+
+`;
 
   

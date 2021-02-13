@@ -28,7 +28,8 @@ export const FontAwesomeIcon  = styled.a`
 
 `;
 
-export const CircleForIcon  = styled.div`
+export const CircleForIcon  = styled.a
+`
   
   display: flex;
   justify-content: center;
@@ -55,7 +56,7 @@ export const BoxForIcons  = styled.div`
 
 `;
   
-export const  ButtonBackToTop = styled.div`
+export const  StyledButtonBackToTop = styled.a`
     position: fixed;
     bottom: -48px;
     right: -50px;

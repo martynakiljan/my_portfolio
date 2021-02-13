@@ -12,9 +12,9 @@ import {
 const Projects = () => {
     return (
      <>
-            <Title>My projects</Title>
+          
             <ProjectsSection  id="projects">
-
+            <Title>My projects</Title>
               <NumberOfProject>1</NumberOfProject>
               <Project/>
 
