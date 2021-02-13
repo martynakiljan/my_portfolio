@@ -35,7 +35,7 @@ const Skills = () => {
  
  return (
         <>
-       <SkillsSection>
+       <SkillsSection  id="skills">
 
        <Title>My hard skills</Title>
 

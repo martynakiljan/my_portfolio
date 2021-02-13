@@ -7,10 +7,12 @@ import Skills from '../Skills/Skills'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
 
+
 const Portfolio = () => {
 
     return (
         <>
+
              <Nav/>
              <Header/>
              <AboutMe/>

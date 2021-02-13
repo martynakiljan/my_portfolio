@@ -1,11 +1,11 @@
 import React from 'react';
-import {ProjectsSection} from './StyledProjectsContainer.styled'
+import {BoxForProject} from './StyledProjectsContainer.styled'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 const Project = () => {
     return (
-        <ProjectsSection>
+        <BoxForProject>
 
             <FontAwesomeIcon  
                className="iconFontAwesome--project" 
@@ -20,7 +20,7 @@ const Project = () => {
 
 
 
-        </ProjectsSection>
+        </BoxForProject>
     )
 
 }

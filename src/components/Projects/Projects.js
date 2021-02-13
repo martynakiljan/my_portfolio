@@ -13,7 +13,7 @@ const Projects = () => {
     return (
      <>
             <Title>My projects</Title>
-            <ProjectsSection>
+            <ProjectsSection  id="projects">
 
               <NumberOfProject>1</NumberOfProject>
               <Project/>

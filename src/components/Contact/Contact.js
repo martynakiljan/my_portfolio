@@ -14,7 +14,7 @@ import {
 
 const Contact = () => {
     return (
-     <ContactSection>
+     <ContactSection id="contact">
             <Title>Contact</Title>
             <TextForContact>I will be very pleased if you contact me! </TextForContact>
 

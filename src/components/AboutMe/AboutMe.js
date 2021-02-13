@@ -20,7 +20,7 @@ const AboutMe = () => {
 
 return (
 
-   <AboutMeSection>
+   <AboutMeSection id="aboutme" >
         <Title>About me</Title>
         <Image src={img} alt='image 1'/>
         <TextAboutMe>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.  </TextAboutMe>

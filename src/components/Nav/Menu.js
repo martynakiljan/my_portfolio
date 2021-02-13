@@ -12,7 +12,9 @@ import {
 
 const Menu = ({ isOpen, onClose }) => {
     return (
-        <MenuElem className="main-menu"  isOpen={isOpen}>
+ 
+
+   <MenuElem className="main-menu"  isOpen={isOpen}>
             <MenuCloseElem
                 href=""
                 onClick={onClose}
@@ -27,13 +29,13 @@ const Menu = ({ isOpen, onClose }) => {
             </MenuCloseElem>
             <MenuListElem isOpen={isOpen}>
                 <MenuListItemElem>
-                    <MenuLinkElem href="#home">home</MenuLinkElem>
+                    <MenuLinkElem  href="#home">home</MenuLinkElem>
                 </MenuListItemElem>
                 <MenuListItemElem>
                     <MenuLinkElem href="#aboutme">About me</MenuLinkElem>
                 </MenuListItemElem>
                 <MenuListItemElem>
-                    <MenuLinkElem href="#projects">Projects</MenuLinkElem>
+                    <MenuLinkElem  href="#projects">Projects</MenuLinkElem>
                 </MenuListItemElem>
                 <MenuListItemElem>
                     <MenuLinkElem href="#skills">Skills</MenuLinkElem>
@@ -42,7 +44,8 @@ const Menu = ({ isOpen, onClose }) => {
                     <MenuLinkElem href="#contact">Contact</MenuLinkElem>
                 </MenuListItemElem>
             </MenuListElem>
-        </MenuElem>
+   </MenuElem>
+ 
     );
 };
 
