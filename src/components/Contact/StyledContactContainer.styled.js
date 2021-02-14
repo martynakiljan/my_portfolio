@@ -91,5 +91,18 @@ export const StyledLink = styled.a`
 
 
 `;
+export const Button = styled.button`
+margin-top: 30px;
+ background-color: white;
+ width: 100px;
+ height: 30px;
+ border: 1px solid lightgray;
+
+  &:hover {
+    background-color: lightgray;
+    color: white;
+  }
+
+`;
 
   

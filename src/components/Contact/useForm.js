@@ -35,10 +35,10 @@ const useForm = (validate) => {
             sendEmail(e)
                 .then((result) => {
                     console.log(result)
-                    e.target.result()
+                    // e.target.result()
                 
                 }, (error) => {
-                    console.log(error.text);
+                    // console.log(error.text);
                 });
 
                 

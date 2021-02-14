@@ -6,7 +6,8 @@ import {
      FormSection,
      Input, 
      Label, 
-     TextArea
+     TextArea,
+     Button 
  } from './StyledContactContainer.styled'
 import useForm from './useForm'
 import validate from './validateInfo'
@@ -19,26 +20,26 @@ const Form = () => {
 
 
     return (
-     <form onSubmit={handleSubmit}>
+     <FormSection onSubmit={handleSubmit}>
 
-          <Label>
+              <Label>
                 <FontAwesomeIcon  
                 className="iconFontAwesome--form" 
                 icon={faPencilAlt}
                 secondary
                 />
                 Name:
-          </Label>
-          <input 
+              </Label>
+              <Input
                id="name"
                type="name"
                name="name"
                placeholder="your name" 
                value={values.name}
-               onChange={handleChange}></input>
+               onChange={handleChange}></Input>
                {errors.name && <p className="error">{errors.name}</p>}
         
-          <Label>
+              <Label>
                <FontAwesomeIcon  
                className="iconFontAwesome--form" 
                icon={faAt}
@@ -46,15 +47,17 @@ const Form = () => {
                />
                 Email:
                </Label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="your Email"
-            value={values.email}
-            onChange={handleChange}
-            className="input"></input>
-                 {errors.email && <p className="error">{errors.email}</p>}
+
+
+               <Input
+               id="email"
+               type="email"
+               name="email"
+               placeholder="your Email"
+               value={values.email}
+               onChange={handleChange}
+               className="input"></Input>
+               {errors.email && <p className="error">{errors.email}</p>}
 
 
 
@@ -67,7 +70,7 @@ const Form = () => {
               Your message:
          
           </Label>
-          <textarea
+          <TextArea
              id="textarea"
              type="textarea"
              name="textarea"
@@ -75,12 +78,12 @@ const Form = () => {
              value={values.textarea}
              onChange={handleChange}
              className="input"/>
-                {errors.email && <p className="error">{errors.email}</p>}
+          {errors.email && <p className="error">{errors.email}</p>}
 
 
 
-               <button onSubmit={handleSubmit}>send</button>
-     </form>
+               <Button onSubmit={handleSubmit}>send!</Button>
+     </FormSection>
     )
 }
 
