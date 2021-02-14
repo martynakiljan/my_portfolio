@@ -3,9 +3,6 @@ import styled from 'styled-components';
 
 export const SkillsSection = styled.section`
     min-height: 70vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     padding: 50px;
 
@@ -16,5 +13,14 @@ export const InfoForSkills = styled.p`
    text-align: center;
    color: ${({ theme }) => theme.mainColorGray};
    
+
+`;
+
+export const ContainerForIcons = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 40px;
 
 `;

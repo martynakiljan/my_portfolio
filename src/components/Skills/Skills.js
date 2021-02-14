@@ -5,7 +5,8 @@ import IconsArrayHardSkills from '../Skills/Icons/IconsArrayHardSkills'
 import IconsArraySoftSkills from '../Skills/Icons/IconsArraySoftSkills'
 import {
     SkillsSection, 
-    InfoForSkills
+    InfoForSkills,
+    ContainerForIcons
 } from './StyledSkillsContainer.styled'
 
 const Skills = () => {
@@ -41,11 +42,16 @@ const Skills = () => {
 
         <InfoForSkills>click the icon!</InfoForSkills>
 
-            {renderIconsHardSkills()}
+        <ContainerForIcons>
+        {renderIconsHardSkills()}
+        </ContainerForIcons>
+     
 
        <Title>My soft skills</Title>
 
-            {renderIconsSoftSkills()}
+           <ContainerForIcons>
+           {renderIconsSoftSkills()}
+           </ContainerForIcons>
 
        </SkillsSection>
 

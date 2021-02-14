@@ -1,4 +1,4 @@
-import { faTasks, faGraduationCap, faRunning } from "@fortawesome/free-solid-svg-icons";
+import { faTasks, faGraduationCap, faRunning , faHistory} from "@fortawesome/free-solid-svg-icons";
 
 const IconsArraySoftSkills = [
     
@@ -10,6 +10,9 @@ const IconsArraySoftSkills = [
     },
     {
         icon: faRunning
+    },
+    {
+        icon: faHistory,
     }
 
 ];

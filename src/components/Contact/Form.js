@@ -8,13 +8,18 @@ import {
      Label, 
      TextArea
  } from './StyledContactContainer.styled'
-
-
+import useForm from './useForm'
+import validate from './validateInfo'
 
 
 const Form = () => {
+
+
+ const {handleChange, values, handleSubmit, errors} = useForm(validate)
+
+
     return (
-     <FormSection>
+     <form onSubmit={handleSubmit}>
 
           <Label>
                 <FontAwesomeIcon  
@@ -24,17 +29,32 @@ const Form = () => {
                 />
                 Name:
           </Label>
-          <Input></Input>
+          <input 
+               id="name"
+               type="name"
+               name="name"
+               placeholder="your name" 
+               value={values.name}
+               onChange={handleChange}></input>
+               {errors.name && <p className="error">{errors.name}</p>}
         
           <Label>
                <FontAwesomeIcon  
                className="iconFontAwesome--form" 
                icon={faAt}
-               secondary
+          
                />
                 Email:
                </Label>
-          <Input></Input>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="your Email"
+            value={values.email}
+            onChange={handleChange}
+            className="input"></input>
+                 {errors.email && <p className="error">{errors.email}</p>}
 
 
 
@@ -47,8 +67,20 @@ const Form = () => {
               Your message:
          
           </Label>
-          <TextArea />
-     </FormSection>
+          <textarea
+             id="textarea"
+             type="textarea"
+             name="textarea"
+             placeholder="your title of message"
+             value={values.textarea}
+             onChange={handleChange}
+             className="input"/>
+                {errors.email && <p className="error">{errors.email}</p>}
+
+
+
+               <button onSubmit={handleSubmit}>send</button>
+     </form>
     )
 }
 
