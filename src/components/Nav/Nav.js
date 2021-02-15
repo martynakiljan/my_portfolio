@@ -23,7 +23,7 @@ const Nav = () => {
     };
 
     return (
-        <NavSection id="home ">
+        <NavSection>
             <BoxForIcons>
                     <CircleForIcon href="#contact"> 
                         <FontAwesomeIcon  

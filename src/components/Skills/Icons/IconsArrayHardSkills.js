@@ -3,32 +3,41 @@ import { faBox, faLaptop } from "@fortawesome/free-solid-svg-icons";
 
 
 const IconsArrayHardSkills = [
-      {
-          icon: faNpm
+      {   id: 0,
+          icon: faNpm,
+          description: "I am using NPM",
       },
-      {
-          icon: faJs
+      {   id: 1,
+          icon: faJs,
+          description: "I like programming in JavaScript and I'm still learning",
       },
-      {
-          icon: faCss3Alt
+      {   id: 2,
+          icon: faCss3Alt,
+          description: "I know CSS well"
       },
-      {
-          icon: faGithub
+      {   id: 3,
+          icon: faGithub,
+          description: "I am happy to use Github"
       },
-      {
-          icon: faHtml5
+      {   id: 4,
+          icon: faHtml5,
+          descriptio: "I have HTML knowledge"
       },
-      {
-          icon: faReact
+      {   id: 4,
+          icon: faReact,
+          description: "I develop my skills in React"
       },
-      {
-          icon: faBootstrap
+      {   id: 5,
+          icon: faBootstrap,
+          description: "I did a few projects with Bootstrap"
       },
-      {
-          icon: faBox
+      {   id: 6,
+          icon: faBox,
+          description: "I am using Webpack",
       },
-      {
-          icon: faLaptop
+      {   id: 7,
+          icon: faLaptop,
+          description: "I can create a responsive website"
       }   
     ];
 

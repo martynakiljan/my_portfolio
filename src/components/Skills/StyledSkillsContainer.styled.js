@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 
 export const SkillsSection = styled.section`
@@ -17,6 +17,7 @@ export const InfoForSkills = styled.p`
 `;
 
 export const ContainerForIcons = styled.div`
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -24,3 +25,22 @@ export const ContainerForIcons = styled.div`
     margin-bottom: 40px;
 
 `;
+
+
+export const DescriptionForSkill = styled.p`
+
+  ${props => (props.active ? "" : "display : none")}
+
+  
+
+  ${props =>
+      props.active &&
+      css`
+      position: absolute;
+      top: -30px;
+
+      `};
+
+ 
+`;
+

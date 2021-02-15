@@ -14,7 +14,7 @@ import {
 const Header = () => {
   return (
 
-      <HeaderSection >
+      <HeaderSection id="home " >
           <MainTitle> he </MainTitle>
 
           <Div>
@@ -32,7 +32,8 @@ const Header = () => {
 
         
       </HeaderSection>
-
+  
+ 
 
   )
 }

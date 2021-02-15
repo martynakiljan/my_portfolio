@@ -1,9 +1,11 @@
+
 import styled, {css} from 'styled-components';
 
 
 export const HeaderSection = styled.header`
  padding: 20px;
 `;
+
 
 
 export const MainTitle = styled.h1`
