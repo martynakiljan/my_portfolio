@@ -6,21 +6,22 @@ import Projects from '../Projects/Projects'
 import Skills from '../Skills/Skills'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
+import {MainPortfolio} from './MainPortfolio.styled'
+
 
 
 const Portfolio = () => {
 
     return (
-        <>
-
-             <Nav/>
+        <MainPortfolio>
+             <Nav />
              <Header/>
              <AboutMe/>
              <Projects/>
              <Skills/>
              <Contact/>
              <Footer/>
-        </>
+        </MainPortfolio>
     )
 
 }

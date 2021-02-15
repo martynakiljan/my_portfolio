@@ -9,8 +9,8 @@ import {
      CircleForIcon,
      BoxForIcons, 
     } from './StyledNavContainer.styled'
+import ButtonBackToTop from './ButtonBackToTop';
 
-import ButtonBackToTop from './ButtonBackToTop'
 
 const Nav = () => {
 
@@ -44,7 +44,7 @@ const Nav = () => {
                     </CircleForIcon>
                     <Menu onClose={handleMenu} isOpen={isOpen} />
 
-                        <ButtonBackToTop/>
+                    <ButtonBackToTop scrollStepInPx="50" delayInMs="16.66"/>
             
             </BoxForIcons>
         </NavSection>

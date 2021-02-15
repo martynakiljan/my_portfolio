@@ -31,6 +31,7 @@ export const DescriptionForSkill = styled.p`
 
   ${props => (props.active ? "" : "display : none")}
 
+
   
 
   ${props =>
