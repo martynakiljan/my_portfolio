@@ -20,6 +20,7 @@ const Nav = () => {
     const handleMenu = event => {
         event.preventDefault();
         toggleMenuState(!isOpen);
+        
     };
 
     return (

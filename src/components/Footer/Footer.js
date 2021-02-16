@@ -9,7 +9,7 @@ const Footer = () => {
     return (
 
      <FooterSection>
-        <FooterTitle>Made with by ♥ Martyna
+        <FooterTitle>Made with ♥ by  Martyna. 2021
         </FooterTitle>
      </FooterSection>
 

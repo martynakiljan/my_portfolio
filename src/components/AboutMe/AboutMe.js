@@ -2,7 +2,7 @@ import React from 'react';
 import img from '../../images/img.jpg'
 import Title from '../Titles/Title'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMountain, faBook, faPizzaSlice} from "@fortawesome/free-solid-svg-icons";
+import { faMountain, faGlobeAmericas, faPizzaSlice} from "@fortawesome/free-solid-svg-icons";
 import {
       AboutMeSection,
       Image,
@@ -10,6 +10,7 @@ import {
       BoxIcon,
       TextIcon
 } from './StyledAboutMeContainer.styled.js'
+
 
 
 
@@ -21,9 +22,17 @@ const AboutMe = () => {
 return (
 
    <AboutMeSection id="aboutme" >
+         
         <Title>About me</Title>
         <Image src={img} alt='image 1'/>
-        <TextAboutMe>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.  </TextAboutMe>
+
+    <TextAboutMe>My name is Martyna. I'm currently working in a restaurant, which has happened to me that I absolutely want to change industries. I saw an ad for making web pages, it made me curious. I bought one Udemy course, then a second, then a third ... and that's how it started. After a few courses, I realized that I needed a mentor and for 8 months I have been studying under the supervision of an experienced teacher 
+              <br/>
+              <br/>
+              and so besides
+        </TextAboutMe>
+
+       
 
         <BoxIcon>
 
@@ -32,21 +41,21 @@ return (
                icon={faMountain}
                secondary
          />
-         <TextIcon>because it is pain, but becaus</TextIcon>
+         <TextIcon>I love hiking in the mountains!</TextIcon>
 
         <FontAwesomeIcon  
                className="iconFontAwesome--aboutMe" 
                icon={faPizzaSlice}
                secondary
          />
-         <TextIcon>because it is pain, but becaus</TextIcon>
+         <TextIcon>I can't live without pizza</TextIcon>
 
         <FontAwesomeIcon  
                className="iconFontAwesome--aboutMe" 
-               icon={faBook}
+               icon={faGlobeAmericas}
                secondary
          />
-       <TextIcon>because it is pain, but becaus</TextIcon>
+       <TextIcon>there is nothing better for me than exploring the world!</TextIcon>
 
 
         </BoxIcon>

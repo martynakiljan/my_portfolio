@@ -32,15 +32,19 @@ const Skills = () => {
       const renderIconsHardSkills = () => {
             return IconsArrayHardSkills.map((data) => {
                 return (
+                 
                     <FontAwesomeIcon
                         icon={data.icon}
+                        size="20px"
                         description = {data.description}
                         onMouseMove={handleClick}
                         active={active === data.id}
                         id={data.id}
                         className="iconFontAwesome--skill"
+                        fixedWidth
+
                     />
-               
+                   
             
                 );
                
@@ -58,6 +62,7 @@ const Skills = () => {
                     active={active === item.id}
                     id={item.id}
                     className="iconFontAwesome--skill"
+                    fixedWidth
                 />
                 )
               })

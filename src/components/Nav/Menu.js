@@ -29,7 +29,7 @@ const Menu = ({ isOpen, onClose }) => {
             </MenuCloseElem>
             <MenuListElem isOpen={isOpen}>
                 <MenuListItemElem>
-                    <MenuLinkElem  href="#home">home</MenuLinkElem>
+                    <MenuLinkElem href="#home">home</MenuLinkElem>
                 </MenuListItemElem>
                 <MenuListItemElem>
                     <MenuLinkElem href="#aboutme">About me</MenuLinkElem>
