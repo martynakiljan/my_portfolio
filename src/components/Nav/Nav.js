@@ -49,7 +49,7 @@ class Nav extends React.Component{
           return (
               <>
             
-            <NavSection ref={this.container} id="home" >
+            <NavSection ref={this.container} >
                          <BoxForIcons >
                                  <CircleForIcon href="#contact"> 
                                     <FontAwesomeIcon  
