@@ -27,7 +27,7 @@ const Projects = ({content}) => {
 
 
   return (
-    <ProjectsSection>
+    <ProjectsSection id="projects">
       <Title>My projects</Title>
       <div>
         {renderProjectList()}

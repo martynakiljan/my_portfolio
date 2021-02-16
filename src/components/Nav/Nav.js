@@ -1,5 +1,5 @@
 
-import React, {useState} from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeOpenText, faHamburger} from "@fortawesome/free-solid-svg-icons";
 import '../../style/App.css'
@@ -8,49 +8,85 @@ import {
      NavSection,
      CircleForIcon,
      BoxForIcons, 
-    } from './StyledNavContainer.styled'
+} from './StyledNavContainer.styled'
+
 import ButtonBackToTop from './ButtonBackToTop';
 
 
-const Nav = () => {
+class Nav extends React.Component{
 
-    const [isOpen, toggleMenuState] = useState(false);
+    container = React.createRef();
 
-
-    const handleMenu = event => {
-        event.preventDefault();
-        toggleMenuState(!isOpen);
-        
+    state = {
+      open: false,
     };
 
-    return (
-        <NavSection>
-            <BoxForIcons>
-                    <CircleForIcon href="#contact"> 
-                        <FontAwesomeIcon  
-                        className="iconFontAwesome--nav" 
-                        icon={faEnvelopeOpenText}
-                        secondary
-                        href="#contact"
-                        />
-                   </CircleForIcon>
-                 
 
-                   <CircleForIcon secondary>
-                        <FontAwesomeIcon
-                        className="iconFontAwesome--nav" 
-                        icon={faHamburger}
-                        onClick={handleMenu}
-                        />
-                    </CircleForIcon>
-                    <Menu onClose={handleMenu} isOpen={isOpen} />
+    componentDidMount() {
+        document.addEventListener("mousedown", this.handleClickOutside);
+    }
+    componentWillUnmount() {
+      document.removeEventListener("mousedown", this.handleClickOutside);
+    }
 
-                    <ButtonBackToTop scrollStepInPx="50" delayInMs="16.66"/>
+    handleClickOutside = event => {
+        if (this.container.current && !this.container.current.contains(event.target)) {
+          this.setState({
+            open: false,
+          });
+        }
+      };
+
+      handleButtonClick = () => {
+        this.setState(state => {
+          return {
+            open: !state.open,
+          };
+        });
+      };
+
+      render() {
+          return (
+              <>
             
-            </BoxForIcons>
-        </NavSection>
-    )
+            <NavSection ref={this.container} id="home" >
+                         <BoxForIcons >
+                                 <CircleForIcon href="#contact"> 
+                                    <FontAwesomeIcon  
+                                    className="iconFontAwesome--nav" 
+                                    icon={faEnvelopeOpenText}
+                                    secondary
+                                    href="#contact"
+                                    />
+                                 </CircleForIcon>
+                             
+            
+                               <CircleForIcon>
+                                    <FontAwesomeIcon
+                                    className="iconFontAwesome--nav secondary" 
+                                    icon={faHamburger}
+                                    onClick={this.handleButtonClick}
+                                    
+                                    />
+                                </CircleForIcon>
+
+
+                                {this.state.open && (
+                                <Menu  />
+                                )}
+            
+                                <ButtonBackToTop scrollStepInPx="50" delayInMs="16.66"/>
+                        
+                        </BoxForIcons>
+              </NavSection>
+              </>
+          
+          )
+      }
+
+
+
 
 }
 
-export default Nav
+export default Nav;

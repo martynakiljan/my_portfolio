@@ -14,23 +14,18 @@ const MenuLinkElem = styled.a`
     }
 `;
 
+
 const MenuCloseElem = styled.a`
 
-    position: absolute;
+    text-align: center;
     color: black;
-    left: 10px;
-    top: 0px;
-    z-index: ${props => (props.isOpen ? 1001 : 'initial')};
+    width: 100%;
+   
+   
 `;
 
 const MenuListElem = styled.ul`
-    ${props =>
-        props.isOpen &&
-        css`
-            position: relative;
-            z-index: 1000;
-        `};
-
+  
     width: 100%;
     list-style: none;
     align-self: center;
@@ -39,31 +34,20 @@ const MenuListElem = styled.ul`
 const MenuListItemElem = styled.li``;
 
 const MenuElem = styled.nav`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  text-align: center;
-  text-transform: uppercase;
+  top:0;
+  left:0;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  right: 0;
+  background-color: 	#F5F5F5;
   ${FixedPosition};
-  display: none;
-  left: 0;
-  top: -100vh;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: visible;
-  transition: top 0.9s ease;
-  z-index: 999;
-
-  ${props =>
-      props.isOpen &&
-      css`
-          display: flex;
-          width: 100vw;
-          height: 40vh;
-          left: 0;
-          top: 0;
-          outline: none;
-          background: white;
-      `}
-
+  
+ 
 
 
 
@@ -74,6 +58,9 @@ const MenuElem = styled.nav`
     font-size: 1.5em;
     color: black;
     text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 100%;
 
   }
 `;

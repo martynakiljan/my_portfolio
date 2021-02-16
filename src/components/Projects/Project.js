@@ -5,7 +5,8 @@ import {
   LinkToProject,
   DescriptionOfProject,
   NameOfProject,
-  IdOfProject
+  IdOfProject,
+  
 } from './StyledProjectsContainer.styled'
 
 const Project = ({id, name, description, live, urlcode} )=> {

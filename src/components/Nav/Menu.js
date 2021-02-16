@@ -1,33 +1,18 @@
 import React from 'react';
-import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {
     MenuElem,
     MenuListElem,
     MenuListItemElem,
     MenuLinkElem,
-    MenuCloseElem
+   
 } from './MenuContainer.styled';
 
-const Menu = ({ isOpen, onClose }) => {
+const Menu = () => {
     return (
  
-
-   <MenuElem className="main-menu"  isOpen={isOpen}>
-            <MenuCloseElem
-                href=""
-                onClick={onClose}
-                isOpen={isOpen}
-            >
-            <FontAwesomeIcon  
-               className="iconFontAwesome--menu" 
-               icon={faTimesCircle}
-               secondary
-            />
-            
-            </MenuCloseElem>
-            <MenuListElem isOpen={isOpen}>
+    <MenuElem >
+            <MenuListElem >
                 <MenuListItemElem>
                     <MenuLinkElem href="#home">home</MenuLinkElem>
                 </MenuListItemElem>
@@ -44,10 +29,13 @@ const Menu = ({ isOpen, onClose }) => {
                     <MenuLinkElem href="#contact">Contact</MenuLinkElem>
                 </MenuListItemElem>
             </MenuListElem>
-   </MenuElem>
+    </MenuElem>
+ 
+
  
     );
 };
 
 
 export default Menu;
+
