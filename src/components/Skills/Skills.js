@@ -40,7 +40,7 @@ const Skills = () => {
                         onMouseMove={handleClick}
                         active={active === data.id}
                         id={data.id}
-                        className="iconFontAwesome--skill"
+                        className="iconFontAwesome--skill icon"
                         fixedWidth
 
                     />

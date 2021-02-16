@@ -1,17 +1,44 @@
 import React from 'react';
 import '../../style/App.css';
+import {
+  ProjectAction,
+  LinkToProject,
+  DescriptionOfProject,
+  NameOfProject,
+  IdOfProject
+} from './StyledProjectsContainer.styled'
 
-const Project = ({key, name, description, live, urlcode} )=> {
+const Project = ({id, name, description, live, urlcode} )=> {
 
 
   return (
-    <div>   
-            <p>{name}</p> 
-            <p>{description}</p>
-            <a>{live}</a> 
-            <a>{urlcode}</a> 
+    <>   
+              
+               
+               <NameOfProject>{name}</NameOfProject>
+               <DescriptionOfProject >{description}</DescriptionOfProject>
+            
+       
+               <ProjectAction className='projectActions'>
+               <IdOfProject>{id}</IdOfProject>
+                  <LinkToProject
+                    href={live}
+                    >
+                    {' '}
+                    Live
+                  </LinkToProject>
 
-    </div>
+                <LinkToProject
+                  href={urlcode}
+                  >
+                  {' '}
+                  Code{' '}
+                </LinkToProject>
+      
+    
+              </ProjectAction>
+
+    </>
   );
 };
 export default Project;

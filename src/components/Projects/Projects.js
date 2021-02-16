@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from './Project';
 import Title from '../Titles/Title'
+import {ProjectsSection} from './StyledProjectsContainer.styled'
 
 
 
@@ -12,7 +13,7 @@ const Projects = ({content}) => {
     return projects.map(project => {
         return (
           <Project
-          key = {project.id}
+          id = {project.id}
           name = {project.project_name}
           description = {project.project_description}
           live = {project.project_url_live}
@@ -26,12 +27,12 @@ const Projects = ({content}) => {
 
 
   return (
-    <>
-    <Title>My projects</Title>
-    <div>
-      {renderProjectList()}
-    </div>
-    </>
+    <ProjectsSection>
+      <Title>My projects</Title>
+      <div>
+        {renderProjectList()}
+      </div>
+    </ProjectsSection>
   );
 }
 

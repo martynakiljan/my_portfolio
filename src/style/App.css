@@ -28,9 +28,12 @@ color: #FF9292;
   color: var(--main-color)
 }
 .iconFontAwesome--skill {
-  font-size: 60px;
+  /* font-size: 60px; */
   color: var(--main-color);
   margin: 20px;
+}
+.fa-fw {
+  font-size: 40px;
 }
 
 .iconFontAwesome--backToTop {
