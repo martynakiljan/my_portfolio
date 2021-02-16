@@ -1,37 +1,38 @@
 import React from 'react';
+import Project from './Project';
 import Title from '../Titles/Title'
-import Project from './Project'
-import {
-  ProjectsSection, 
-  NumberOfProject,
-  TextUnderProjects
- } from './StyledProjectsContainer.styled'
 
 
 
-const Projects = () => {
-    return (
-     <>
+const Projects = ({content}) => {
+
+  const { projects } = content;
+
+  const renderProjectList = () => {
+    return projects.map(project => {
+        return (
+          <Project
+          key = {project.id}
+          name = {project.project_name}
+          description = {project.project_description}
+          live = {project.project_url_live}
+          urlcode = {project.project_url_code}
+          />
           
-            <ProjectsSection  id="projects">
-            <Title>My projects</Title>
-              <NumberOfProject>1</NumberOfProject>
-              <Project/>
-
-              <NumberOfProject>2</NumberOfProject>
-              <Project/>
-              
-              <NumberOfProject>3</NumberOfProject>
-              <Project/>
-
-              <NumberOfProject>4</NumberOfProject>
-              <Project/>
-              <TextUnderProjects>too little ? Come to my github!</TextUnderProjects>
+        )
+    })
+  }
 
 
-            </ProjectsSection>
-     </>
-    )
+
+  return (
+    <>
+    <Title>My projects</Title>
+    <div>
+      {renderProjectList()}
+    </div>
+    </>
+  );
 }
 
 export default Projects;

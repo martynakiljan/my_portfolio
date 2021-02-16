@@ -1,4 +1,6 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
+
+
 
 export const NavSection = styled.nav`
   z-index: 1000;
@@ -14,6 +16,19 @@ export const NavSection = styled.nav`
  
 `;
 
+const move = keyframes`
+   0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+`;
+
+
 
 export const FontAwesomeIcon  = styled.a`
   color: ${({ theme }) => theme.mainColorGray};
@@ -23,13 +38,18 @@ export const FontAwesomeIcon  = styled.a`
   width: 15px;
   border: 2px solid #FF9292;
   border-radius: 50%;
+  
+
 
 
 
 `;
 
-export const CircleForIcon  = styled.a
-`
+
+
+
+export const CircleForIcon  = styled.a`
+
   
   display: flex;
   justify-content: center;
@@ -40,6 +60,10 @@ export const CircleForIcon  = styled.a
   border: 4px solid #FF9292;
   border-radius: 50%;
   margin-left: 0px;
+  animation: ${move} 1s linear;
+ 
+  
+
 
 
   
@@ -56,6 +80,20 @@ export const BoxForIcons  = styled.div`
 
 `;
   
+
+
+const moveTop = keyframes`
+   0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+`;
+
 export const  StyledButtonBackToTop = styled.a`
     position: fixed;
     bottom: -48px;
@@ -73,6 +111,8 @@ export const  StyledButtonBackToTop = styled.a`
     color: #fff;
     font-size: 1rem;
     opacity: 1;
+    animation: ${moveTop} 1s linear infinite;
+    
   
 
 `;

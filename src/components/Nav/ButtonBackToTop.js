@@ -36,7 +36,7 @@ class ButtonBackToTop extends React.Component {
              className="iconFontAwesome--backToTop"
              href="#home"
              icon={faChevronUp}          
-                 />
+             />
 
     </StyledButtonBackToTop>;
   }

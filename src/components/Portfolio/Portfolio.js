@@ -7,22 +7,30 @@ import Skills from '../Skills/Skills'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
 import {MainPortfolio} from './MainPortfolio.styled'
+import content from '../Projects/Content.json'
 
 
 
-const Portfolio = () => {
+class Portfolio extends React.Component {
+
+
+
+
+render() {
+
 
     return (
         <MainPortfolio>
              <Nav />
              <Header/>
              <AboutMe/>
-             <Projects/>
+             <Projects content={content}/>
              <Skills/>
              <Contact/>
              <Footer/>
         </MainPortfolio>
     )
+}
 
 }
 

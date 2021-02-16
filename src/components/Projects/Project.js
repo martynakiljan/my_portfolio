@@ -1,28 +1,17 @@
 import React from 'react';
-import {BoxForProject} from './StyledProjectsContainer.styled'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import '../../style/App.css';
 
-const Project = () => {
-    return (
-        <BoxForProject>
-
-            <FontAwesomeIcon  
-               className="iconFontAwesome--project" 
-               icon={faLaptopCode}
-               secondary
-            />
-            <FontAwesomeIcon  
-               className="iconFontAwesome--project" 
-               icon={faCode}
-               secondary
-            />
+const Project = ({key, name, description, live, urlcode} )=> {
 
 
+  return (
+    <div>   
+            <p>{name}</p> 
+            <p>{description}</p>
+            <a>{live}</a> 
+            <a>{urlcode}</a> 
 
-        </BoxForProject>
-    )
-
-}
-
+    </div>
+  );
+};
 export default Project;

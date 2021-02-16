@@ -1,10 +1,11 @@
 
-import styled, {css} from 'styled-components';
+import styled, {css, keyframes} from 'styled-components';
 
 
 export const HeaderSection = styled.header`
  padding: 20px;
 `;
+
 
 
 
@@ -18,6 +19,7 @@ export const MainTitle = styled.h1`
 
 
 
+
   ${({ secondary }) =>
     secondary &&
     css`
@@ -25,6 +27,7 @@ export const MainTitle = styled.h1`
      font-size: ${({ theme }) => theme.xxl};
      text-transform: uppercase;
      margin-top: 0px;
+
   
     `}
 

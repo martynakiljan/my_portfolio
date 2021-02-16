@@ -1,0 +1,20 @@
+{
+   
+    "projects": [{
+            "id": 1,
+            "project_name": "Slider",
+            "project_description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.",
+            "project_url_live": "https://martynakil.github.io/-JS-slideshow/",
+            "project_url_code": "https://github.com/martynakil/-JS-slideshow"
+        
+        },
+        {
+            "id": 2,
+            "project_name": "Website",
+            "project_description": "dkfmklmfdklmfdkdfmfkldmklmf",
+            "project_url_live": "https://www.foos-events.com/",
+            "project_url_code": "hhttps://github.com/martynakil/-my-first-serious-website"
+  
+        }
+    ]
+}

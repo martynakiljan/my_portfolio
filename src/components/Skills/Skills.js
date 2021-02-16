@@ -9,7 +9,7 @@ import {
     ContainerForIcons,
     DescriptionForSkill,
 } from './StyledSkillsContainer.styled'
-
+import '../../style/App.css'
 
 
 
