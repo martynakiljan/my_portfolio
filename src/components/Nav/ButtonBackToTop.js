@@ -28,7 +28,8 @@ class ButtonBackToTop extends React.Component {
   }
 
   render() {
-    return <StyledButtonBackToTop title='Back to top' className={this.props.scrollY > (window.innerHeight - (window.innerHeight / 2)) ? 'scroll' : 'scroll hidden'}
+    return (
+    <StyledButtonBackToTop title='Back to top' className={this.props.scrollY > (window.innerHeight - (window.innerHeight / 2)) ? 'scroll' : 'scroll hidden'}
       onClick={() => { this.scrollToTop(); }}>
     
 
@@ -38,7 +39,8 @@ class ButtonBackToTop extends React.Component {
              icon={faChevronUp}          
              />
 
-    </StyledButtonBackToTop>;
+    </StyledButtonBackToTop>
+    )
   }
 }
 
