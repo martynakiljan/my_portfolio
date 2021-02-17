@@ -1,6 +1,7 @@
 import { faNpm, faJs, faCss3Alt, faGithub, faHtml5 , faReact, faBootstrap} from "@fortawesome/free-brands-svg-icons"
 import { faBox, faLaptop } from "@fortawesome/free-solid-svg-icons";
-
+// np
+import { SiRedux } from "@react-icons/all-files/fa/FaBeer";
 
 const IconsArrayHardSkills = [
       {   id: 0,
@@ -38,6 +39,10 @@ const IconsArrayHardSkills = [
       {   id: 7,
           icon: faLaptop,
           description: "I can create a responsive website"
+      },
+      {   id: 8,
+          icon: SiRedux,
+          description: "I started learning Redux"
       }   
     ];
 
