@@ -4,7 +4,7 @@ import styled, {css} from 'styled-components';
 export const SkillsSection = styled.section`
     min-height: 70vh;
     align-items: center;
-    padding: 50px;
+    padding: 150px;
 
 `;
 export const InfoForSkills = styled.p`

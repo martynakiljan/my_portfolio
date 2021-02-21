@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 
 export const ProjectsSection = styled.section`
@@ -12,32 +12,14 @@ margin-top: 10px;
 margin-bottom: 100px;
 
 `;
-export const ProjectAction = styled.div`
-  background-color: lightgray;
-  display: flex;
-  margin-bottom: 70px;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 260px;
-
-`;
 
 
-export const LinkToProject = styled.a`
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 150px;
-color: black;
-text-decoration: none;
 
 
-`;
+
 export const DescriptionOfProject = styled.div`
 margin-top: 30px;
-margin-bottom: 30px;
+
 
 
 
@@ -51,10 +33,74 @@ font-style: italic;
 `;
 
 
+
+export const ContainerForProject = styled.div`
+width: 100%;
+position: relative;
+padding-top: 150px;
+
+
+`;
+
+export const Image = styled.img.attrs(props => ({
+  src: props.src,
+}))`
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 70px;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  overflow: hidden;
+
+  `
+
 export const IdOfProject = styled.p`
-font-size: 60px;
-opacity: 0.8;
+position: absolute;
+color:white;
+font-size: 40px;
 
 
 
+`;
+
+export const LinkToProjectOne = styled.a`
+position: absolute;
+font-size: 30px;
+color: white;
+display: flex;
+left: 0;
+justify-content: center;
+align-items: center;
+width: 50%;
+height: 150px;
+padding: 50px;
+text-decoration: none;
+
+&:hover {
+  text-decoration: underline;
+
+}
+
+
+`;
+export const LinkToProjectTwo = styled.a`
+position: absolute;
+color: white;
+display: flex;
+right: 0;
+font-size: 30px;
+justify-content: center;
+align-items: center;
+width: 50%;
+height: 150px;
+text-decoration: none;
+
+&:hover {
+  text-decoration: underline;
+
+}
 `;

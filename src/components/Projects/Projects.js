@@ -18,6 +18,7 @@ const Projects = ({content}) => {
           description = {project.project_description}
           live = {project.project_url_live}
           urlcode = {project.project_url_code}
+          img = {project.project_img}
           />
           
         )

@@ -1,45 +1,45 @@
 import React from 'react';
 import '../../style/App.css';
 import {
-  ProjectAction,
-  LinkToProject,
+  Image,
+  LinkToProjectOne,
+  LinkToProjectTwo,
   DescriptionOfProject,
   NameOfProject,
   IdOfProject,
+  ContainerForProject
   
 } from './StyledProjectsContainer.styled'
 
-const Project = ({id, name, description, live, urlcode} )=> {
+const Project = ({id, name, description, live, urlcode, img} )=> {
 
 
   return (
     <>   
-              
-               
+               <ContainerForProject>
+            
                <NameOfProject>{name}</NameOfProject>
                <DescriptionOfProject >{description}</DescriptionOfProject>
-            
-       
-               <ProjectAction className='projectActions'>
+               <Image src={img} alt="imgproject"/>
                <IdOfProject>{id}</IdOfProject>
-                  <LinkToProject
+                  <LinkToProjectOne
                     href={live}
                     >
                     {' '}
                     Live
-                  </LinkToProject>
+                  </LinkToProjectOne>
 
-                <LinkToProject
-                  href={urlcode}
-                  >
-                  {' '}
-                  Code{' '}
-                </LinkToProject>
-      
+                  <LinkToProjectTwo
+                  
+                    href={urlcode}
+                    >
+                    {' '}
+                    Code{' '}
+                  </LinkToProjectTwo>
+             </ContainerForProject>
     
-              </ProjectAction>
-
     </>
+
   );
 };
 export default Project;

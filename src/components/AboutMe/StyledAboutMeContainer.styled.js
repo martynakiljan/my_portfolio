@@ -13,10 +13,9 @@ export const Image = styled.img.attrs(props => ({
  display: flex;
  justify-content: center;
  margin-top: 50px;
-width: 210px;
-max-height: 300px;
+ width: 210px; 
+ max-height: 300px;
  margin: 0 auto;
- /* border-radius: 50%; */
  background-size: contain;
 
   `
