@@ -2,19 +2,19 @@ import { faTasks, faGraduationCap, faRunning , faHistory} from "@fortawesome/fre
 
 const IconsArraySoftSkills = [
     
-    {   id: 8,
+    {   id: 11,
         icon: faTasks,
         description: "If I undertake a task, I always try to finish it.",
     },
-    {   id: 9,
+    {   id: 12,
         icon: faGraduationCap,
-        description: "If I undertake a task, I always try to finish it.",
+        description: "I am ambitious. I learn a lot.",
     },
-    {   id: 10,
+    {   id: 13,
         icon: faRunning,
         description: "I am persistent",
     },
-    {   id: 11,
+    {   id: 14,
         icon: faHistory,
         description: "I manage my time well",
     }

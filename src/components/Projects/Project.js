@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../style/App.css';
 import {
   Image,
@@ -10,8 +10,9 @@ import {
   ContainerForProject
   
 } from './StyledProjectsContainer.styled'
-
 const Project = ({id, name, description, live, urlcode, img} )=> {
+
+
 
 
   return (
@@ -20,7 +21,7 @@ const Project = ({id, name, description, live, urlcode, img} )=> {
             
                <NameOfProject>{name}</NameOfProject>
                <DescriptionOfProject >{description}</DescriptionOfProject>
-               <Image src={img} alt="imgproject"/>
+               <Image  src={img} alt="imgproject"/>
                <IdOfProject>{id}</IdOfProject>
                   <LinkToProjectOne
                     href={live}

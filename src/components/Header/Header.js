@@ -15,6 +15,7 @@ const Header = () => {
   return (
 
       <HeaderSection id="home">
+     
           <MainTitle> he </MainTitle>
 
           <Div>
@@ -27,7 +28,7 @@ const Header = () => {
             cursor='_'
           />
           
-
+       
           <DecorativeLine/>
 
         
