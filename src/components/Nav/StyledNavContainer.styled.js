@@ -62,11 +62,7 @@ export const CircleForIcon  = styled.a`
   margin-left: 0px;
   animation: ${move} 1s linear;
  
-  
 
-
-
-  
 
 `;
   

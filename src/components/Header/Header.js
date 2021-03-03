@@ -6,7 +6,7 @@ import {
   Div, 
   DecorativeLine, 
   Dot, 
-  HeaderSection
+  HeaderSection,
 } from './StyledHeaderContainer.styled'
 
 
@@ -26,6 +26,7 @@ const Header = () => {
             string='I`m Martyna and I`m looking for my first job junior fron end developer!'
             delay={80}
             cursor='_'
+           
           />
           
        

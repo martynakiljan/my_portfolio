@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const FooterSection = styled.footer`
     background-color: lightpink;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     min-height: 10vh;

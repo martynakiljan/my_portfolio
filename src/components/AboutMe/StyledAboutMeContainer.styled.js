@@ -13,11 +13,15 @@ export const Image = styled.img.attrs(props => ({
  display: flex;
  justify-content: center;
  margin-top: 50px;
- width: 210px; 
- max-height: 300px;
+ width: 270px; 
+ max-height: 350px;
  margin: 0 auto;
  background-size: contain;
 
+ @media (min-width: 768px) {
+    /* width: 70%; */
+    height: 70%;
+ }
   `
 
 export const TextAboutMe = styled.p`
@@ -46,7 +50,6 @@ font-size: ${({ theme }) => theme.fontSize.text};
 
 
 `;
-
 
   
   

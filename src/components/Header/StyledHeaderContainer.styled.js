@@ -1,12 +1,10 @@
 
-import styled, {css, keyframes} from 'styled-components';
+import styled, {css} from 'styled-components';
 
 
 export const HeaderSection = styled.header`
  padding: 20px;
 `;
-
-
 
 
 export const MainTitle = styled.h1`
@@ -17,7 +15,9 @@ export const MainTitle = styled.h1`
   font-weight:bold;
   margin-top: 110px;
 
-
+ @media (min-width: 768px) {
+    font-size: 170px;
+ }
 
 
   ${({ secondary }) =>
@@ -27,6 +27,7 @@ export const MainTitle = styled.h1`
      font-size: ${({ theme }) => theme.xxl};
      text-transform: uppercase;
      margin-top: 0px;
+     /* position: relative; */
 
   
     `}
@@ -47,6 +48,10 @@ height: 35px;
 border-radius: 50%;
 background-color: ${({ theme }) => theme.mainColorGray};
 margin-top: 78px;
+/* position: absolute; */
+/* left: 240px; */
+
+
 
 `;
 export const DecorativeLine = styled.div`

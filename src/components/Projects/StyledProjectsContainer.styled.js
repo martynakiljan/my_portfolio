@@ -14,9 +14,6 @@ margin-bottom: 100px;
 `;
 
 
-
-
-
 export const DescriptionOfProject = styled.div`
 margin-top: 30px;
 
@@ -25,10 +22,8 @@ margin-top: 30px;
 
 `;
 export const NameOfProject = styled.div`
-margin-top: 30px;
+margin-top: 70px;
 font-style: italic;
-
-
 
 `;
 
@@ -37,9 +32,7 @@ font-style: italic;
 export const ContainerForProject = styled.div`
 width: 100%;
 position: relative;
-padding-top: 150px;
-
-
+height: 50vh;
 `;
 
 export const Image = styled.img.attrs(props => ({
