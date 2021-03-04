@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 
 export const GlobalStyle = createGlobalStyle`
-  @import url(href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
+  @import url(href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
   
   *, *::before, *::after {
     box-sizing: border-box;

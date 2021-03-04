@@ -17,16 +17,16 @@ const Menu = () => {
                     <MenuLinkElem href="#home">home</MenuLinkElem>
                 </MenuListItemElem>
                 <MenuListItemElem>
-                    <MenuLinkElem href="#aboutme">About me</MenuLinkElem>
+                    <MenuLinkElem href="#aboutme">about me</MenuLinkElem>
                 </MenuListItemElem>
                 <MenuListItemElem>
-                    <MenuLinkElem  href="#projects">Projects</MenuLinkElem>
+                    <MenuLinkElem  href="#projects">projects</MenuLinkElem>
                 </MenuListItemElem>
                 <MenuListItemElem>
-                    <MenuLinkElem href="#skills">Skills</MenuLinkElem>
+                    <MenuLinkElem href="#skills">skills</MenuLinkElem>
                 </MenuListItemElem>
                 <MenuListItemElem>
-                    <MenuLinkElem href="#contact">Contact</MenuLinkElem>
+                    <MenuLinkElem href="#contact">contact</MenuLinkElem>
                 </MenuListItemElem>
             </MenuListElem>
     </MenuElem>

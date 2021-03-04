@@ -5,16 +5,23 @@ root {
   
 .iconFontAwesome--nav {
   color: 	#505050;
-  font-size: 40px;
+  font-size: 37px;
 
 }
 
 .secondary {
-  z-index: 1000000;
+  z-index: 100;
 }
 
 .iconFontAwesome--nav:hover {
-  color: lightblue;
+  color: #938E9B;
+}
+
+.iconFontAwesome--close {
+  color: 	#505050;
+  font-size: 37px;
+  margin: 10px;
+  z-index: 100;
 }
 
 
@@ -26,17 +33,22 @@ root {
 }
 
 
-
 .fa-js-square {
   font-size: 20px;
   color: var(--main-color)
 }
+
+
 .iconFontAwesome--skill {
-  /* font-size: 60px; */
   color: var(--main-color);
   margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .fa-fw {
+  margin: 40px;
   font-size: 40px;
 }
 
@@ -50,6 +62,7 @@ root {
  margin-right: 5px;
   
 }
+
 .iconFontAwesome--contact {
   font-size: 100px;
   padding: 0 20px 0 20px;
@@ -57,7 +70,7 @@ root {
 
 
 .iconFontAwesome--contact:hover {
-  color: lightblue;
+  color: #938E9B;
 }
 
 

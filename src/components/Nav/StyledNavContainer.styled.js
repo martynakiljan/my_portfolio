@@ -3,7 +3,7 @@ import styled, {keyframes} from 'styled-components';
 
 
 export const NavSection = styled.nav`
-  z-index: 1000;
+  z-index: 100;
   display: flex;
   position: sticky;
   top: 0;
@@ -40,17 +40,12 @@ export const FontAwesomeIcon  = styled.a`
   border-radius: 50%;
   
 
-
-
-
 `;
 
 
 
 
 export const CircleForIcon  = styled.a`
-
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,7 +100,7 @@ export const  StyledButtonBackToTop = styled.a`
     border: none;
     border-radius: 50%;
     color: #fff;
-    font-size: 1rem;
+    font-size: 2rem;
     opacity: 1;
     animation: ${moveTop} 1s linear infinite;
     

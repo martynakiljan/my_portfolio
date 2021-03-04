@@ -7,6 +7,7 @@ import {
   DecorativeLine, 
   Dot, 
   HeaderSection,
+  ParentForTypewriter
 } from './StyledHeaderContainer.styled'
 
 
@@ -19,15 +20,16 @@ const Header = () => {
           <MainTitle> he </MainTitle>
 
           <Div>
-              <MainTitle secondary> llo </MainTitle>   <Dot/> 
+              <MainTitle secondary> llo <Dot/> </MainTitle>   
           </Div>
 
-          <Typewriter
-            string='I`m Martyna and I`m looking for my first job junior fron end developer!'
+        <ParentForTypewriter>
+        <Typewriter
+            string='I am Martyna, I aspire to be junior front-end developer!'
             delay={80}
-            cursor='_'
-           
+            cursor='|'   
           />
+        </ParentForTypewriter>
           
        
           <DecorativeLine/>

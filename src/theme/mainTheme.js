@@ -8,6 +8,7 @@ export const theme = {
   bold: 600,
   fontSize: {
     text: '1.5rem',
+    textBig: '2.2rem',
     title: '3.4rem',
     number: '6rem',
    

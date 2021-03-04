@@ -3,13 +3,16 @@ import Title from '../Titles/Title'
 import IconsArrayHardSkills from '../Skills/Icons/IconsArrayHardSkills'
 import IconsArraySoftSkills from '../Skills/Icons/IconsArraySoftSkills'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { SiRedux, SiStyledComponents} from "react-icons/si";
 import {
     SkillsSection, 
     InfoForSkills,
     ContainerForIcons,
     DescriptionForSkill,
+    ContainerForIconsSecondary
 } from './StyledSkillsContainer.styled'
 import '../../style/App.css'
+
 
 
 
@@ -31,6 +34,37 @@ const Skills = () => {
 
       const renderIconsHardSkills = () => {
             return IconsArrayHardSkills.map((data) => {
+                if(data.isAnotherPackageIcons) {
+                    
+                   return (
+                   <SiStyledComponents
+                   size="60px"
+                   description = {data.description}
+                   onMouseMove={handleClick}
+                   active={active === data.id}
+                   id={data.id}
+                   className="iconFontAwesome--skill icon"
+                   fixedWidth
+                   />
+                   )
+
+                }
+                if(data.isReactIcon) {
+                    
+                   return (
+              
+                   <SiRedux
+                   size="40px"
+                   description = {data.description}
+                   onMouseMove={handleClick}
+                   active={active === data.id}
+                   id={data.id}
+                   className="iconFontAwesome--skill icon"
+                   fixedWidth
+                   />       
+                   )
+
+                }
                 return (
                  
                     <FontAwesomeIcon
@@ -44,6 +78,7 @@ const Skills = () => {
                         fixedWidth
 
                     />
+                    
                    
             
                 );
@@ -102,13 +137,13 @@ const Skills = () => {
  return (
         <>
        <SkillsSection  id="skills">
-
+     
        <Title>My hard skills</Title>
 
         <InfoForSkills>click the icon!</InfoForSkills>
 
         <ContainerForIcons>
-            
+   
         {renderIconsHardSkills()}
         {renderDescriptionsHardSkills()}
         </ContainerForIcons>
@@ -116,10 +151,10 @@ const Skills = () => {
 
        <Title>My soft skills</Title>
 
-           <ContainerForIcons>
+           <ContainerForIconsSecondary>
            {renderIconsSoftSkills()}
            {renderDescriptionsSoftSkills()}
-           </ContainerForIcons>
+           </ContainerForIconsSecondary>
 
        </SkillsSection>
 

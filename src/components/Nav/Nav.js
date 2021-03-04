@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelopeOpenText, faHamburger} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelopeOpenText, faHamburger, faTimes} from "@fortawesome/free-solid-svg-icons";
 import '../../style/App.css'
 import Menu from './Menu'
 import {
@@ -60,18 +60,26 @@ class Nav extends React.Component{
                                     />
                                  </CircleForIcon>
                              
-            
-                               <CircleForIcon>
-                                    <FontAwesomeIcon
-                                    className="iconFontAwesome--nav secondary" 
-                                    icon={faHamburger}
-                                    onClick={this.handleButtonClick}
-                                    
-                                    />
-                                </CircleForIcon>
+                                  {this.state.open ? 
+                                   <FontAwesomeIcon
+                                   className="iconFontAwesome--close" 
+                                   icon={faTimes}
+                                   onClick={this.handleButtonClick}
+                                   
+                                   /> :  
+                                     
+                                   <CircleForIcon>
+                                   <FontAwesomeIcon
+                                   className="iconFontAwesome--nav secondary" 
+                                   icon={faHamburger}
+                                   onClick={this.handleButtonClick}
+                                   
+                                   />
+                               </CircleForIcon>
+                               }
+                           
 
-
-                                {this.state.open && (
+                                {this.state.open  && (
                                 <Menu  />
                                 )}
             

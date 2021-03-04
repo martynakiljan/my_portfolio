@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const AboutMeSection = styled.section`
  margin-bottom: 100px;
- color: ${({ theme }) => theme.mainColorGray};
+ color: black;
  font-size: ${({ theme }) => theme.fontSize.text};
 `;
 
@@ -19,7 +19,6 @@ export const Image = styled.img.attrs(props => ({
  background-size: contain;
 
  @media (min-width: 768px) {
-    /* width: 70%; */
     height: 70%;
  }
   `
@@ -37,6 +36,7 @@ flex-direction: column;
 justify-content: space-between;
 align-items: center;
 min-height: 50vh;
+padding: 60px 0 60px 0;
 
 
 `;
@@ -46,7 +46,14 @@ export const TextIcon = styled.p`
 width: 100%;
 text-align: center;
 margin-top: 60px;
-font-size: ${({ theme }) => theme.fontSize.text};
+font-size: ${({ theme }) => theme.fontSize.textBig};
+
+
+`;
+export const TextAbourtMeSecondary = styled.p`
+
+text-align: center;
+margin: 0 auto;
 
 
 `;

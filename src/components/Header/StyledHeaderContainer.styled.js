@@ -27,8 +27,7 @@ export const MainTitle = styled.h1`
      font-size: ${({ theme }) => theme.xxl};
      text-transform: uppercase;
      margin-top: 0px;
-     /* position: relative; */
-
+     position: relative;
   
     `}
 
@@ -47,19 +46,25 @@ width: 35px;
 height: 35px;
 border-radius: 50%;
 background-color: ${({ theme }) => theme.mainColorGray};
-margin-top: 78px;
-/* position: absolute; */
-/* left: 240px; */
-
-
+position: absolute; 
+right: -40px;
+top: 75px;
 
 `;
+
+
+
 export const DecorativeLine = styled.div`
 width: 80%;
 height: 2px;
 margin:  0 auto;
 background-color: ${({ theme }) => theme.mainColorGray};
 margin-top: 100px;
+
+`;
+
+export const ParentForTypewriter = styled.p`
+font-size: 20px;
 
 `;
 

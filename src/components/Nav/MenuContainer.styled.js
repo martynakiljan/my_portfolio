@@ -44,7 +44,8 @@ const MenuElem = styled.nav`
   max-width: 1024px;
   margin: 0 auto;
   right: 0;
-  background-color: 	#F5F5F5;
+  background-color: 	white;
+  box-shadow: 0px 0px 15px lightgray;
   ${FixedPosition};
   
  
@@ -74,7 +75,7 @@ const MenuToggleElem = styled.a`
 
     &:hover,
     &:focus {
-        color: #c00;
+        color: #938E9B;
     }
 
 `;
