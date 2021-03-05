@@ -3,7 +3,7 @@ import styled, {css} from 'styled-components';
 
 
 export const HeaderSection = styled.header`
- padding: 20px;
+ padding: 10px;
 `;
 
 
@@ -15,7 +15,7 @@ export const MainTitle = styled.h1`
   font-weight:bold;
   margin-top: 110px;
 
- @media (min-width: 768px) {
+ @media (min-width: 760px) {
     font-size: 170px;
  }
 
@@ -42,8 +42,8 @@ export const Div = styled.div`
 
 
 export const Dot = styled.div`
-width: 35px;
-height: 35px;
+width: 25px;
+height: 25px;
 border-radius: 50%;
 background-color: ${({ theme }) => theme.mainColorGray};
 position: absolute; 
@@ -64,7 +64,10 @@ margin-top: 100px;
 `;
 
 export const ParentForTypewriter = styled.p`
-font-size: 20px;
+font-size: 12px;
+@media (min-width: 760px) {
+  font-size: 17px;
+  }
 
 `;
 

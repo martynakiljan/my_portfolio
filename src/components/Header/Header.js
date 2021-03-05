@@ -20,7 +20,7 @@ const Header = () => {
           <MainTitle> he </MainTitle>
 
           <Div>
-              <MainTitle secondary> llo <Dot/> </MainTitle>   
+              <MainTitle secondary> llo <Dot/> </MainTitle>
           </Div>
 
         <ParentForTypewriter>

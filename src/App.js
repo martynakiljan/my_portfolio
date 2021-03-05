@@ -34,7 +34,7 @@ function App() {
    <>
     {
       loading ? 
-      <BeatLoader color={'#8E2D97'} loading={loading} size={10} css={override}/>
+      <BeatLoader color={'#FF9292'} loading={loading} size={10} css={override}/>
 
       :
       <>

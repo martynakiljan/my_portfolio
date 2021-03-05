@@ -38,7 +38,7 @@ const Skills = () => {
                     
                    return (
                    <SiStyledComponents
-                   size="60px"
+                   size="50px"
                    description = {data.description}
                    onMouseMove={handleClick}
                    active={active === data.id}
@@ -54,7 +54,7 @@ const Skills = () => {
                    return (
               
                    <SiRedux
-                   size="40px"
+                   size="35px"
                    description = {data.description}
                    onMouseMove={handleClick}
                    active={active === data.id}

@@ -24,8 +24,13 @@ export const Image = styled.img.attrs(props => ({
   `
 
 export const TextAboutMe = styled.p`
-padding: 40px;
+padding: 30px;
 text-align: justify;
+
+@media (min-width: 900px) {
+      padding: 50px;
+      font-size: 17px;
+     }
 `;
 
 
@@ -36,7 +41,7 @@ flex-direction: column;
 justify-content: space-between;
 align-items: center;
 min-height: 50vh;
-padding: 60px 0 60px 0;
+padding: 40px 10px 60px 10px;
 
 
 `;
@@ -47,6 +52,9 @@ width: 100%;
 text-align: center;
 margin-top: 60px;
 font-size: ${({ theme }) => theme.fontSize.textBig};
+@media (min-width: 900px) {
+      font-size: 1.8rem;
+     }
 
 
 `;
@@ -54,6 +62,11 @@ export const TextAbourtMeSecondary = styled.p`
 
 text-align: center;
 margin: 0 auto;
+margin-top:20px;
+
+@media (min-width: 900px) {
+      font-size: 17px;
+     }
 
 
 `;

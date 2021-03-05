@@ -34,7 +34,6 @@ const Form = () => {
                id="name"
                type="name"
                name="name"
-               placeholder="your name" 
                value={values.name}
                onChange={handleChange}></Input>
                {errors.name && <p className="error">{errors.name}</p>}
@@ -53,7 +52,6 @@ const Form = () => {
                id="email"
                type="email"
                name="email"
-               placeholder="your Email"
                value={values.email}
                onChange={handleChange}
                className="input"></Input>
@@ -63,7 +61,7 @@ const Form = () => {
 
          <Label>
                <FontAwesomeIcon  
-               lassName="iconFontAwesome--form" 
+               className="iconFontAwesome--form" 
                icon={faCommentDots}
                secondary
               />
@@ -74,7 +72,6 @@ const Form = () => {
              id="textarea"
              type="textarea"
              name="textarea"
-             placeholder="your title of message"
              value={values.textarea}
              onChange={handleChange}
              className="input"/>

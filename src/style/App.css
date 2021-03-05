@@ -1,7 +1,4 @@
-root {
-  --main-color: red;
-}
-  
+
   
 .iconFontAwesome--nav {
   color: 	#505050;
@@ -32,6 +29,10 @@ root {
 
 }
 
+.error {
+  padding-top: 5px;
+  color:#FF9292;
+}
 
 .fa-js-square {
   font-size: 20px;
@@ -48,8 +49,7 @@ root {
 }
 
 .fa-fw {
-  margin: 40px;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .iconFontAwesome--backToTop {
@@ -59,13 +59,20 @@ root {
 }
 
 .iconFontAwesome--form {
- margin-right: 5px;
+ margin-right: 10px;
   
 }
 
 .iconFontAwesome--contact {
-  font-size: 100px;
+  font-size: 80px;
   padding: 0 20px 0 20px;
+  color: 	#505050;
+}
+
+@media only screen and (min-width: 600px) {
+  .iconFontAwesome--contact{
+   font-size: 90px;
+  }
 }
 
 

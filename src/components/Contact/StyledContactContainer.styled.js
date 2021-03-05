@@ -6,7 +6,8 @@ export const TextForContact = styled.h4`
 width: 100%;
 text-align: center;
 margin-top: 60px;
-padding: 5px;
+padding: 10px;
+font-weight: lighter;
 color: ${({ theme }) => theme.mainColorGray};
 font-size: ${({ theme }) => theme.fontSize.text};
 
@@ -23,13 +24,19 @@ max-width: 600px;
 min-height: 400px;
 margin: 0 auto;
 padding: 20px 0;
-margin-top: 50px;
+margin-top: 100px;
 margin-bottom: 50px;
+
 
 
 `;
 export const ContactSection = styled.section`
 width: 100%;
+margin-top: 100px;
+
+@media (min-width: 1024px) {
+      margin-top: 150px;
+     }
 
 
 `;
@@ -69,6 +76,7 @@ export const TextArea = styled.textarea`
     background: none;
     font-size: 1rem;
     font-family: Monospace;
+    min-height: 85px;
 
 `;
 export const AnotherFormContact = styled.div`
@@ -86,9 +94,7 @@ export const AnotherFormContact = styled.div`
 
 `;
 export const StyledLink = styled.a`
-
   color: black;
-
 
 `;
 export const Button = styled.button`
@@ -96,10 +102,11 @@ margin-top: 30px;
  background-color: white;
  width: 100px;
  height: 30px;
- border: 1px solid lightgray;
+ border: 2px solid  #FF9292;
 
   &:hover {
     background-color: lightgray;
+    border: none;
     color: white;
   }
 

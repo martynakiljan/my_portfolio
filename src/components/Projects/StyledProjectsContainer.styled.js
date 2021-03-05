@@ -9,7 +9,7 @@ font-weight:${({ theme }) => theme.light};
 color: ${({ theme }) => theme.mainColorGray};
 padding: 10px;
 margin-top: 10px;
-margin-bottom: 100px;
+
 
 `;
 
