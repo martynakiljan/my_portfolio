@@ -22,9 +22,8 @@ const Skills = () => {
 
 
     const handleClick = e => {
-        console.log('ok')
+
         const index = parseInt(e.target.id, 0);
-        console.log(index)
         if (index !== active) {
         setActive(index);
         }

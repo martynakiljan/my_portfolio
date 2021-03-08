@@ -71,10 +71,9 @@ export const ContainerForIcons = styled.div`
 
 
 
-
-
 export const ContainerForIconsSecondary = styled.section`
  display: grid;
+ position: relative;
  place-items: center;
  margin-top: 100px;
  margin-bottom: 50px;

@@ -3,6 +3,7 @@ import myphoto from '../../images/myphoto.png'
 import Title from '../Titles/Title'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMountain, faGlobeAmericas, faPizzaSlice} from "@fortawesome/free-solid-svg-icons";
+import { RandomReveal } from 'react-random-reveal'
 import {
       AboutMeSection,
       Image,
@@ -44,21 +45,48 @@ return (
                icon={faMountain}
                secondary
          />
-         <TextIcon >I love hiking in the mountains!</TextIcon>
+
+          <TextIcon>
+          <RandomReveal
+            isPlaying
+            duration={4.6}
+            revealDuration={0.5}
+            characters="I love hiking in the mountainsnp"
+            />
+          </TextIcon>
+         
 
         <FontAwesomeIcon  
                className="iconFontAwesome--aboutMe" 
                icon={faPizzaSlice}
                secondary
          />
-         <TextIcon >I can't live without pizza</TextIcon>
+         <TextIcon>
+         <RandomReveal
+            isPlaying
+            duration={4.6}
+            revealDuration={0.5}
+            characters="I can't live without pizza"
+            />
+         </TextIcon>
+       
 
         <FontAwesomeIcon  
                className="iconFontAwesome--aboutMe" 
                icon={faGlobeAmericas}
                secondary
          />
-       <TextIcon >there is nothing better for me than exploring the world!</TextIcon>
+
+           <TextIcon>
+           <RandomReveal
+            isPlaying
+            duration={4.6}
+            revealDuration={0.5}
+            characters="there is nothing better for me than exploring the world!"
+            />
+         
+           </TextIcon>
+
 
 
         </BoxIcon>

@@ -48,7 +48,8 @@ border-radius: 50%;
 background-color: ${({ theme }) => theme.mainColorGray};
 position: absolute; 
 right: -40px;
-top: 75px;
+/* top: calc(100% - 65px); */
+
 
 `;
 
