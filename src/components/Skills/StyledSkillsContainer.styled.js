@@ -4,6 +4,7 @@ import {StyledComponents} from '@styled-icons/simple-icons/StyledComponents'
     export const SkillsSection = styled.section`
         min-height: 70vh;
         align-items: center;
+        margin-top: 150px;
 
     `;
 

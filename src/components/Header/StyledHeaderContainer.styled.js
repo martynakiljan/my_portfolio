@@ -50,8 +50,8 @@ height: 25px;
 border-radius: 50%;
 background-color: ${({ theme }) => theme.mainColorGray};
 position: absolute; 
-right: -40px;
-bottom: 0.25em;
+right: -35px;
+bottom: 0.23em;
 /* top: calc(100% - 65px); */
 
 
