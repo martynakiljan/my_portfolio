@@ -4,13 +4,8 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
   @import url(href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
   
-  *, *::before, *::after {
-    box-sizing: border-box;
-     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-     
-     
-  }
+ 
+
   
   html {
     font-size: 62.5%; 
@@ -20,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
   * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
   }
   
   body {

@@ -7,7 +7,7 @@ import Skills from '../Skills/Skills'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
 import {MainPortfolio} from './MainPortfolio.styled'
-import content from '../Projects/Content.json'
+
 
 
 
@@ -24,7 +24,7 @@ render() {
              <Nav />
              <Header/>
              <AboutMe/>
-             <Projects content={content}/>
+             <Projects/>
              <Skills/>
              <Contact/>
              <Footer/>

@@ -13,7 +13,10 @@ export const MainTitle = styled.h1`
   font-size: 120px;
   text-transform: uppercase;
   font-weight:bold;
+  margin: 0;
+  padding: 0;
   margin-top: 110px;
+  
 
  @media (min-width: 760px) {
     font-size: 170px;
@@ -48,6 +51,7 @@ border-radius: 50%;
 background-color: ${({ theme }) => theme.mainColorGray};
 position: absolute; 
 right: -40px;
+bottom: 0.25em;
 /* top: calc(100% - 65px); */
 
 

@@ -2,15 +2,14 @@ import React from 'react';
 import Project from './Project';
 import Title from '../Titles/Title'
 import {ProjectsSection} from './StyledProjectsContainer.styled'
+import projectsImages from './projectsImages'
 
 
+const Projects = () => {
 
-const Projects = ({content}) => {
-
-  const { projects } = content;
 
   const renderProjectList = () => {
-    return projects.map(project => {
+    return projectsImages.map(project => {
         return (
           <Project
           id = {project.id}

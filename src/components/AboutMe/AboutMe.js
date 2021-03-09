@@ -28,6 +28,7 @@ return (
         <Title>About me</Title>
             <>
             <Image src={myphoto} alt='image 1'/>
+      
 
             <TextAboutMe>My name is Martyna. I'm currently working in a restaurant, which has happened to me that I absolutely want to change industries. I saw an ad for making web pages, it made me curious. I bought one Udemy course, then a second, then a third ... and that's how it started. After a few courses, I realized that I needed a mentor and for 8 months I have been studying under the supervision of an experienced teacher 
                   <br/>

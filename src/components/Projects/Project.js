@@ -7,7 +7,8 @@ import {
   DescriptionOfProject,
   NameOfProject,
   IdOfProject,
-  ContainerForProject
+  ContainerForProject,
+  ContainerForUrl
   
 } from './StyledProjectsContainer.styled'
 const Project = ({id, name, description, live, urlcode, img} )=> {
@@ -23,7 +24,8 @@ const Project = ({id, name, description, live, urlcode, img} )=> {
                <DescriptionOfProject >{description}</DescriptionOfProject>
                <Image  src={img} alt="imgproject"/>
                <IdOfProject>{id}</IdOfProject>
-                  <LinkToProjectOne
+               <ContainerForUrl>
+               <LinkToProjectOne
                     href={live}
                     >
                     {' '}
@@ -37,6 +39,8 @@ const Project = ({id, name, description, live, urlcode, img} )=> {
                     {' '}
                     Code{' '}
                   </LinkToProjectTwo>
+               </ContainerForUrl>
+            
              </ContainerForProject>
     
     </>
