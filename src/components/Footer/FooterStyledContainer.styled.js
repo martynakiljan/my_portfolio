@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const FooterSection = styled.footer`
-    background-color: lightpink;
+    background-color: #FF9292;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -12,5 +12,9 @@ export const FooterSection = styled.footer`
 
 export const FooterTitle= styled.p`
 font-size: 17px;
+
+@media (max-width: 350px) {
+  font-size: 13px;
+ }
  
 `;

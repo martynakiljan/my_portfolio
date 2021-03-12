@@ -7,7 +7,7 @@ export default function validateInfo(values) {
 
     if(!values.name.trim()) {
         errors.length+=1
-        errors.name = ' name is required!'
+        errors.name = 'Name is required!'
        
         
     }else if(values.name.length < 3) {

@@ -29,6 +29,7 @@ const MenuListElem = styled.ul`
     width: 100%;
     list-style: none;
     align-self: center;
+    min-height: 100px;
 `;
 
 const MenuListItemElem = styled.li``;
@@ -44,7 +45,7 @@ const MenuElem = styled.nav`
   max-width: 1024px;
   margin: 0 auto;
   right: 0;
-  background-color: 	white;
+  background-color: white;
   box-shadow: 0px 0px 15px lightgray;
   ${FixedPosition};
   
@@ -56,7 +57,7 @@ const MenuElem = styled.nav`
     display: block;
     padding: 0.75em 15px;
     line-height: 1em;
-    font-size: 1.5em;
+    font-size: 1em;
     color: black;
     text-decoration: none;
     text-align: center;

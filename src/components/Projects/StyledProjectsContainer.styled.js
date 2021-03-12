@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 
 
 export const ProjectsSection = styled.section`
@@ -15,15 +15,20 @@ margin-top: 10px;
 
 export const DescriptionOfProject = styled.div`
 margin-top: 30px;
-
-
-
-
+margin-bottom: 15px;
+font-weight:lighter;
+font-size: 17px;
+@media (max-width: 350px) {
+  font-size: 12px;
+ }
 `;
+
 export const NameOfProject = styled.div`
+margin-left: 50px;
 margin-top: 70px;
 font-weight: lighter;
 color: #FF9292;
+font-size: 30px;
 
 `;
 export const  ContainerForUrl = styled.div`
@@ -42,8 +47,9 @@ width: 100%;
 export const Image = styled.img.attrs(props => ({
   src: props.src,
 }))`
-
-  width: 100%;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
   margin-bottom: 70px;
   background-size: cover;
   background-repeat: no-repeat, repeat;
@@ -51,22 +57,66 @@ export const Image = styled.img.attrs(props => ({
   background-position: center;
   background-blend-mode: overlay;
   overflow: hidden;
+  height: 400px;
+
+
+ @media (max-width: 350px) {
+  width: 100%;
+  height: 250px;
+  object-fit:cover;
+  object-position:50% 50%;
+ }
+ @media (min-width: 350px) {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  object-position:50% 50%;
+ }
+ @media (min-width: 380px) {
+  width: 70%;
+  height: 100%;
+  object-fit:cover;
+  object-position:50% 50%;
+ }
+ @media (min-width: 520px) {
+  width: 70%;
+  height: 100%;
+  object-fit:cover;
+  object-position:50% 50%;
+ }
+ @media (min-width: 820px) {
+  width: 50%;
+  height: 100%;
+  object-fit:cover;
+  object-position:50% 50%;
+ }
 
   `
 
 export const IdOfProject = styled.p`
-
+position: absolute;
+background-color:#505050;
+width: 40px;
+text-align: center;
 color:white;
-font-size: 40px;
+font-size: 30px;
 
 
+
+`;
+
+export const TechnologiesInfo = styled.p`
+color: black;
+margin-bottom:50px;
+font-size: 12px;
+color: #A9A9A9;
 
 `;
 
 export const LinkToProjectOne = styled.a`
 
 font-size: 20px;
-color: black;
+color: #A9A9A9;
 display: flex;
 left: 0;
 justify-content: center;
@@ -85,15 +135,15 @@ text-decoration: none;
 `;
 export const LinkToProjectTwo = styled.a`
 font-size: 20px;
-color: black;
+color: #A9A9A9;
 display: flex;
 left: 0;
 justify-content: center;
 align-items: center;
 width: 20%;
-height: 150px;
-padding: 50px;
 text-decoration: none;
+
+}
 
 &:hover {
   text-decoration: underline;

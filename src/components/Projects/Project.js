@@ -8,10 +8,11 @@ import {
   NameOfProject,
   IdOfProject,
   ContainerForProject,
-  ContainerForUrl
+  ContainerForUrl,
+  TechnologiesInfo
   
 } from './StyledProjectsContainer.styled'
-const Project = ({id, name, description, live, urlcode, img} )=> {
+const Project = ({id, name, description, live, urlcode, img, technologies} )=> {
 
 
 
@@ -19,11 +20,12 @@ const Project = ({id, name, description, live, urlcode, img} )=> {
   return (
     <>   
                <ContainerForProject>
-            
+               <IdOfProject>{id}</IdOfProject>
                <NameOfProject>{name}</NameOfProject>
                <DescriptionOfProject >{description}</DescriptionOfProject>
+               <TechnologiesInfo>Technologies: {technologies}</TechnologiesInfo>
                <Image  src={img} alt="imgproject"/>
-               <IdOfProject>{id}</IdOfProject>
+              
                <ContainerForUrl>
                <LinkToProjectOne
                     href={live}

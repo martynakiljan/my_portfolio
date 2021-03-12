@@ -51,6 +51,7 @@ export const TextIcon = styled.p`
 width: 100%;
 text-align: center;
 margin-top: 60px;
+color: #505050;
 font-size: ${({ theme }) => theme.fontSize.textBig};
 @media (min-width: 900px) {
       font-size: 1.8rem;

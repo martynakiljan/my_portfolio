@@ -75,7 +75,7 @@ const Form = () => {
              value={values.textarea}
              onChange={handleChange}
              className="input"/>
-          {errors.email && <p className="error">{errors.email}</p>}
+          {errors.textarea && <p className="error">{errors.textarea}</p>}
 
 
 

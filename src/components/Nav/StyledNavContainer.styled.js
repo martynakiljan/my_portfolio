@@ -102,6 +102,7 @@ export const  StyledButtonBackToTop = styled.a`
     color: #fff;
     font-size: 2rem;
     opacity: 1;
+    border: 2px solid white;
     animation: ${moveTop} 1s linear infinite;
     
   
