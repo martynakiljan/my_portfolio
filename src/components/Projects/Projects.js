@@ -2,7 +2,7 @@ import React from 'react';
 import Project from './Project';
 import Title from '../Titles/Title'
 import {ProjectsSection} from './StyledProjectsContainer.styled'
-import projectsImages from './projectsArray'
+import projectsImages from './DataprojectsArray'
 
 
 const Projects = () => {
