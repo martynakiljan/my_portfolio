@@ -39,9 +39,6 @@ function App() {
       :
       <>
       <GlobalStyle/>
-      <Helmet>
-                <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet"/>
-      </Helmet>
        <ThemeProvider theme={theme}>
          <Portfolio/>
          <AnimatedCursor
