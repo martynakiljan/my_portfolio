@@ -7,7 +7,7 @@ import GlobalStyle from '../src/theme/GlobalStyle'
 import AnimatedCursor from "react-animated-cursor"
 import BeatLoader from "react-spinners/BeatLoader";
 import './style/App.css'
-
+import {Helmet} from "react-helmet";
 
 const override = css`
  display: flex;
@@ -39,6 +39,9 @@ function App() {
       :
       <>
       <GlobalStyle/>
+      <Helmet>
+                <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet"/>
+      </Helmet>
        <ThemeProvider theme={theme}>
          <Portfolio/>
          <AnimatedCursor
