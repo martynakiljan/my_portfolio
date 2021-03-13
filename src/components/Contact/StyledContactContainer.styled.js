@@ -98,7 +98,8 @@ export const StyledLink = styled.a`
 
 `;
 export const Button = styled.button`
-margin-top: 30px;
+ margin-top: 30px;
+ font-family: 'Cutive Mono', monospace;
  background-color: white;
  width: 100px;
  height: 30px;

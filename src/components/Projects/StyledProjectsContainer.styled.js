@@ -14,8 +14,8 @@ margin-top: 10px;
 
 
 export const DescriptionOfProject = styled.div`
-margin-top: 30px;
-margin-bottom: 15px;
+margin-top: 20px;
+margin-bottom: 10px;
 font-weight:lighter;
 font-size: 17px;
 @media (max-width: 350px) {
@@ -24,11 +24,13 @@ font-size: 17px;
 `;
 
 export const NameOfProject = styled.div`
-margin-left: 50px;
-margin-top: 70px;
+margin-left: 36px;
 font-weight: lighter;
 color: #FF9292;
-font-size: 30px;
+font-size: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
 
 `;
 export const  ContainerForUrl = styled.div`
@@ -40,6 +42,7 @@ align-items:center;
 
 
 export const ContainerForProject = styled.div`
+margin-top: 100px;
 width: 100%;
 
 `;
@@ -62,7 +65,7 @@ export const Image = styled.img.attrs(props => ({
 
  @media (max-width: 350px) {
   width: 100%;
-  height: 250px;
+  height: 100%;
   object-fit:cover;
   object-position:50% 50%;
  }
@@ -96,10 +99,20 @@ export const Image = styled.img.attrs(props => ({
 export const IdOfProject = styled.p`
 position: absolute;
 background-color:#505050;
-width: 40px;
+width: 30px;
 text-align: center;
 color:white;
-font-size: 30px;
+font-size: 40px;
+line-height: 60px;
+
+
+
+
+`;
+export const MainContainerTitleProject = styled.div`
+display: flex;
+height: 60px;
+
 
 
 
@@ -143,7 +156,7 @@ align-items: center;
 width: 20%;
 text-decoration: none;
 
-}
+
 
 &:hover {
   text-decoration: underline;

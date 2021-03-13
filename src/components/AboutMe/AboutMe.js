@@ -52,7 +52,7 @@ return (
             isPlaying
             duration={4.6}
             revealDuration={0.5}
-            characters="I love hiking in the mountainsnp"
+            characters="I am mountain lover!"
             />
           </TextIcon>
          

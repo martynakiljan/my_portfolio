@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 
 export const GlobalStyle = createGlobalStyle`
-  @import url(href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
   
  
 
@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   html {
     font-size: 62.5%; 
     scroll-behavior: smooth;
+    font-family: 'Cutive Mono', monospace;;
   }
 
   * {
