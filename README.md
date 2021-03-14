@@ -5,7 +5,7 @@
 
 ----
 
-* ** **I created my little portfolio to show some projects that I have done.
+* :collision: I created my little portfolio to show some projects that I have done.
 Portfolio - page about me... :collision: *
 
 
@@ -42,14 +42,13 @@ It works in such a way that the website connects to this service thanks to the A
 ----
 
 <h3>do you want to watch it live? </h3>
-:collision: this page is on the server :collision:
 
 :arrow_right: :arrow_right:   [click me](http://martynakiljan.github.io/my_portfolio) :arrow_left: :arrow_left:
 
 ----
 
 
-:computer: TECHNOLOGIES : html, css and JS.
+:computer: TECHNOLOGIES : HTML, CSS , REACT, NPM, STYLED COMPONENTS
 
 
 ----
@@ -59,16 +58,21 @@ My next small project from React   :arrow_right: :arrow_right: :arrow_right: 
 
 :mag_right: :mag_right: see what it looks like:
 
+------
 
-![Zrzut ekranu 2021-03-14 o 18 59 33](https://user-images.githubusercontent.com/59742201/111078768-70d92680-84f7-11eb-8d21-135dfda79889.png)
+![Zrzut ekranu 2021-03-14 o 18 59 33](https://user-images.githubusercontent.com/59742201/111078823-ac73f080-84f7-11eb-8d08-d151f8e096e2.png)
 
+------
 
-![Zrzut ekranu 2021-03-14 o 18 59 22](https://user-images.githubusercontent.com/59742201/111078771-7171bd00-84f7-11eb-87ab-46bec791b409.png)
+![Zrzut ekranu 2021-03-14 o 18 59 09](https://user-images.githubusercontent.com/59742201/111078843-c1e91a80-84f7-11eb-808f-7a1ae5ee2a3c.png)
 
+------
 
-![Zrzut ekranu 2021-03-14 o 18 59 09](https://user-images.githubusercontent.com/59742201/111078773-720a5380-84f7-11eb-9b89-7dca3e27e7e0.png)
+![Zrzut ekranu 2021-03-14 o 18 59 22](https://user-images.githubusercontent.com/59742201/111078850-cc0b1900-84f7-11eb-86bb-6d369f78d472.png)
 
+------
 
-![Zrzut ekranu 2021-03-14 o 18 45 03](https://user-images.githubusercontent.com/59742201/111078776-72a2ea00-84f7-11eb-9f3f-dfd608afa85a.png)
+![Zrzut ekranu 2021-03-14 o 18 59 33](https://user-images.githubusercontent.com/59742201/111078867-dd542580-84f7-11eb-854f-53be10f9eed7.png)
+
 
 
