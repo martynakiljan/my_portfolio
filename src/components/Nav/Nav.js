@@ -35,7 +35,7 @@ class Nav extends React.Component{
             open: false,
           });
         }
-      };
+    };
 
       handleButtonClick = () => {
         this.setState(state => {
@@ -49,48 +49,47 @@ class Nav extends React.Component{
           return (
               <>
             
-            <NavSection ref={this.container} >
-                         <BoxForIcons >
-                                 <CircleForIcon href="#contact"> 
-                                    <FontAwesomeIcon  
-                                    className="iconFontAwesome--nav" 
-                                    icon={faEnvelopeOpenText}
-                                    secondary
-                                    href="#contact"
-                                    />
-                                 </CircleForIcon>
-                             
-                                  {this.state.open ? 
-                                   <FontAwesomeIcon
-                                   className="iconFontAwesome--close" 
-                                   icon={faTimes}
-                                   onClick={this.handleButtonClick}
-                                   
-                                   /> :  
-                                     
-                                   <CircleForIcon>
-                                   <FontAwesomeIcon
-                                   className="iconFontAwesome--nav secondary" 
-                                   icon={faHamburger}
-                                   onClick={this.handleButtonClick}
-                                   
-                                   />
-                               </CircleForIcon>
-                               }
-                           
+      <NavSection ref={this.container} >
+            <BoxForIcons>
+            <CircleForIcon href="#contact"> 
+              <FontAwesomeIcon  
+              className="iconFontAwesome--nav" 
+              icon={faEnvelopeOpenText}
+              secondary
+              href="#contact"
+              />
+            </CircleForIcon>
+        
+            {this.state.open ? 
+              <FontAwesomeIcon
+              className="iconFontAwesome--close" 
+              icon={faTimes}
+              onClick={this.handleButtonClick}
+              /> :  
+                
+              <CircleForIcon>
+              <FontAwesomeIcon
+              className="iconFontAwesome--nav secondary" 
+              icon={faHamburger}
+              onClick={this.handleButtonClick}
+              />
 
-                                {this.state.open  && (
-                                <Menu  />
-                                )}
-            
-                          <ButtonBackToTop scrollStepInPx={50} delayInMs={50} /> 
-                        
-                        </BoxForIcons>
-              </NavSection>
-              </>
-          
-          )
-      }
+            </CircleForIcon>
+           }
+  
+
+          {this.state.open  && (
+          <Menu  />
+          )}
+      
+        <ButtonBackToTop scrollStepInPx={50} delayInMs={50} /> 
+                  
+          </BoxForIcons>
+        </NavSection>
+        </>
+    
+    )
+ }
 
 
 

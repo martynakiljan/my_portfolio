@@ -10,10 +10,7 @@ const Title= ({children}) => {
       }, [])
     
     return (
-       
-
           <StyledTitle data-aos="fade-right">{children}</StyledTitle>
-       
     )
 
 }

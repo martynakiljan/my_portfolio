@@ -1,5 +1,4 @@
 
-
 import {useState} from 'react'
 
 import sendEmail from './sendEmail'
@@ -7,12 +6,12 @@ import sendEmail from './sendEmail'
 const useForm = (validate) => {
 
 
-
     const [values, setValues] = useState({
        name: '',
        email: '',
        textarea: '',
     })
+    
     const [errors, setErrors] = useState({})
 
     const handleChange = e => {

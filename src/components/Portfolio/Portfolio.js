@@ -10,15 +10,10 @@ import {MainPortfolio} from './MainPortfolio.styled'
 
 
 
-
 class Portfolio extends React.Component {
 
 
-
-
 render() {
-
-
     return (
         <MainPortfolio>
              <Nav />

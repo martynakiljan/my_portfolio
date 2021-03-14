@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
 
-
 const FixedPosition = css`
     @supports (position: fixed) {
         position: fixed;
@@ -20,12 +19,11 @@ const MenuCloseElem = styled.a`
     text-align: center;
     color: black;
     width: 100%;
-   
-   
+ 
 `;
 
 const MenuListElem = styled.ul`
-  
+
     width: 100%;
     list-style: none;
     align-self: center;
@@ -49,10 +47,6 @@ const MenuElem = styled.nav`
   box-shadow: 0px 0px 15px lightgray;
   ${FixedPosition};
   
- 
-
-
-
   a {
     display: block;
     padding: 0.75em 15px;

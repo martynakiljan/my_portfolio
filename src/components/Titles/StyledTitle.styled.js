@@ -8,8 +8,4 @@ export const StyledTitle = styled.h4`
   text-transform: uppercase;
   font-size: ${({ theme }) => theme.fontSize.title};
 
-  
-
-     
-
 `

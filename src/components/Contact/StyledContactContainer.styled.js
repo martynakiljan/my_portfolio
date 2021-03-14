@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 
-
 export const TextForContact = styled.h4`
 width: 100%;
 text-align: center;
@@ -10,7 +9,6 @@ padding: 10px;
 font-weight: lighter;
 color: ${({ theme }) => theme.mainColorGray};
 font-size: ${({ theme }) => theme.fontSize.text};
-
 
 `;
 
@@ -26,10 +24,9 @@ margin: 0 auto;
 padding: 20px 0;
 margin-top: 100px;
 margin-bottom: 50px;
-
-
-
 `;
+
+
 export const ContactSection = styled.section`
 width: 100%;
 margin-top: 100px;
@@ -37,10 +34,7 @@ margin-top: 100px;
 @media (min-width: 1024px) {
       margin-top: 150px;
      }
-
-
 `;
-
 
 
 export const Label = styled.label`
@@ -50,9 +44,9 @@ width: 80%;
 font-size: 20px;
 font-size: ${({ theme }) => theme.fontSize.text};
 color: ${({ theme }) => theme.mainColorGray};
-
-
 `;
+
+
 export const Input = styled.input`
     display: block;
     padding: 5px 10px;
@@ -63,8 +57,8 @@ export const Input = styled.input`
     background: none;
     font-size: 1rem;
     color: ${({ theme }) => theme.mainColorGray};
-
 `;
+
 export const TextArea = styled.textarea`
     display: block;
     padding: 5px 10px;
@@ -77,8 +71,9 @@ export const TextArea = styled.textarea`
     font-size: 1rem;
     font-family: Monospace;
     min-height: 85px;
-
 `;
+
+
 export const AnotherFormContact = styled.div`
 
    display: flex;
@@ -88,15 +83,14 @@ export const AnotherFormContact = styled.div`
    align-items: center;
    padding: 30px;
    height: 100%;
-   font-size: ${({ theme }) => theme.fontSize.text};
-   
-
-
+   font-size: ${({ theme }) => theme.fontSize.text};  
 `;
+
+
 export const StyledLink = styled.a`
   color: black;
-
 `;
+
 export const Button = styled.button`
  margin-top: 30px;
  font-family: 'Cutive Mono', monospace;

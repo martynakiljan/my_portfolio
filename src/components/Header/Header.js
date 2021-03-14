@@ -11,17 +11,16 @@ import {
 } from './StyledHeaderContainer.styled'
 
 
-
 const Header = () => {
   return (
 
       <HeaderSection id="home">
-     
-          <MainTitle> he </MainTitle>
 
-          <Div>
-              <MainTitle secondary> llo <Dot/> </MainTitle>
-          </Div>
+        <MainTitle> he </MainTitle>
+
+        <Div>
+            <MainTitle secondary> llo <Dot/> </MainTitle>
+        </Div>
 
         <ParentForTypewriter>
         <Typewriter
@@ -30,14 +29,10 @@ const Header = () => {
             cursor='|'   
           />
         </ParentForTypewriter>
-          
-       
-          <DecorativeLine/>
-
         
-      </HeaderSection>
-  
+        <DecorativeLine/>
  
+      </HeaderSection>
 
   )
 }

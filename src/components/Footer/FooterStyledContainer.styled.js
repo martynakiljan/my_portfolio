@@ -7,6 +7,7 @@ export const FooterSection = styled.footer`
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    color: ${({ theme }) => theme.mainColorGray};
     min-height: 10vh;
 `;
 

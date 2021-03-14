@@ -1,9 +1,9 @@
 
-import quiz from '../../images/quiz.png'
-import website from '../../images/website.png'
-import website2 from '../../images/website2.png'
-import CurrencyWallet from '../../images/CurrencyWallet.png'
-import kanban from '../../images/kanban.png'
+import quiz from '../../Data/images/quiz.png'
+import website from '../../Data/images/website.png'
+import website2 from '../../Data/images/website2.png'
+import CurrencyWallet from '../../Data/images/CurrencyWallet.png'
+import kanban from '../../Data/images/kanban.png'
 
 
 const projectsImages = [

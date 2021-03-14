@@ -2,7 +2,7 @@ import React from 'react';
 import Project from './Project';
 import Title from '../Titles/Title'
 import {ProjectsSection} from './StyledProjectsContainer.styled'
-import projectsImages from './DataprojectsArray'
+import projectsImages from '../../Data/Projects/DataprojectsArray'
 
 
 const Projects = () => {
@@ -10,6 +10,7 @@ const Projects = () => {
 
   const renderProjectList = () => {
     return projectsImages.map(project => {
+     
         return (
           <Project
           id = {project.id}
@@ -19,20 +20,17 @@ const Projects = () => {
           urlcode = {project.project_url_code}
           img = {project.project_img}
           technologies = {project.technologies}
+          isVisible = {project.isVisible}
           />
-          
-        )
+        )      
     })
   }
-
 
 
   return (
     <ProjectsSection id="projects">
       <Title>My projects</Title>
-      <div>
         {renderProjectList()}
-      </div>
     </ProjectsSection>
   );
 }

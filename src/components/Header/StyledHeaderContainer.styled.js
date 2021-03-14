@@ -17,7 +17,6 @@ export const MainTitle = styled.h1`
   padding: 0;
   margin-top: 110px;
   
-
  @media (min-width: 760px) {
     font-size: 170px;
  }
@@ -32,8 +31,7 @@ export const MainTitle = styled.h1`
      margin-top: 0px;
      position: relative;
   
-    `}
-
+  `}
 `;
 
 
@@ -52,9 +50,6 @@ background-color: ${({ theme }) => theme.mainColorGray};
 position: absolute; 
 right: -35px;
 bottom: 0.23em;
-/* top: calc(100% - 65px); */
-
-
 `;
 
 
@@ -65,15 +60,14 @@ height: 2px;
 margin:  0 auto;
 background-color: ${({ theme }) => theme.mainColorGray};
 margin-top: 100px;
-
 `;
+
 
 export const ParentForTypewriter = styled.p`
 font-size: 12px;
 @media (min-width: 760px) {
   font-size: 17px;
   }
-
 `;
 
 

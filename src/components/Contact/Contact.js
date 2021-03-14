@@ -12,28 +12,27 @@ import {
 } from './StyledContactContainer.styled'
 
 
-
 const Contact = () => {
     return (
      <ContactSection id="contact">
-            <Title>Contact</Title>
-            <TextForContact>I will be very pleased if you contact me! </TextForContact>
+          <Title>Contact</Title>
+          <TextForContact>I will be very pleased if you contact me! </TextForContact>
 
-            <Form/>
-            <TextForContact> or </TextForContact>
-            <AnotherFormContact>
+          <Form/>
+          <TextForContact> or </TextForContact>
+          <AnotherFormContact>
 
 
-         <StyledLink href="https://github.com/martynakil">
+         <StyledLink href="https://github.com/martynakiljan">
          <FontAwesomeIcon 
             className="iconFontAwesome--contact" 
             icon={faGithubAlt}
             secondary
             />
-        </StyledLink>
+          </StyledLink>
 
 
-          <StyledLink href="https://www.linkedin.com/in/martyna-kiljan-03a7a71a9/">
+         <StyledLink href="https://www.linkedin.com/in/martyna-kiljan-03a7a71a9/">
          <FontAwesomeIcon  
               className="iconFontAwesome--contact" 
               icon={faLinkedin}
@@ -43,17 +42,15 @@ const Contact = () => {
 
 
           <StyledLink href="https://www.facebook.com/martyna.kiljan/">
-            <FontAwesomeIcon  
+          <FontAwesomeIcon  
               className="iconFontAwesome--contact" 
               icon={faFacebook}
               secondary
             />
           </StyledLink>
                 
-            </AnotherFormContact>
-
-  
-          
+          </AnotherFormContact>
+   
      </ContactSection>
     )
 }

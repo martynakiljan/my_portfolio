@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const AboutMeSection = styled.section`
  margin-bottom: 100px;
  color: black;
@@ -27,6 +26,7 @@ export const TextAboutMe = styled.p`
 padding: 30px;
 text-align: justify;
 
+
 @media (min-width: 900px) {
       padding: 50px;
       font-size: 17px;
@@ -35,14 +35,12 @@ text-align: justify;
 
 
 export const BoxIcon = styled.section`
-
 display:flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
 min-height: 50vh;
 padding: 40px 10px 60px 10px;
-
 
 `;
 
@@ -51,24 +49,22 @@ export const TextIcon = styled.p`
 width: 100%;
 text-align: center;
 margin-top: 60px;
-color: #505050;
+color: ${({ theme }) => theme.mainColorGray};
 font-size: ${({ theme }) => theme.fontSize.textBig};
 @media (min-width: 900px) {
-      font-size: 1.8rem;
-     }
-
+  font-size: 1.8rem;
+ }
 
 `;
-export const TextAbourtMeSecondary = styled.p`
 
+export const TextAbourtMeSecondary = styled.p`
 text-align: center;
 margin: 0 auto;
 margin-top:20px;
 
 @media (min-width: 900px) {
-      font-size: 17px;
-     }
-
+  font-size: 17px;
+}
 
 `;
 

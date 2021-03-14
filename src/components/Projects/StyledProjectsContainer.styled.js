@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 
 export const ProjectsSection = styled.section`
-
 width: 100%;
 font-size: 20px;
 font-weight:${({ theme }) => theme.light};
@@ -37,13 +36,27 @@ export const  ContainerForUrl = styled.div`
 display: flex;
 justify-content: center;
 align-items:center;
-
 `;
 
 
 export const ContainerForProject = styled.div`
 margin-top: 100px;
 width: 100%;
+${({ isVisible }) => isVisible && `
+   display: none;
+`}
+
+
+@media (min-width: 1000px) {
+  height: 100%;
+  object-fit:cover;
+  object-position:50% 50%;
+
+  ${({ isVisible }) => isVisible && `
+   display: block;
+  `}
+
+ }
 
 `;
 
@@ -51,12 +64,13 @@ export const Image = styled.img.attrs(props => ({
   src: props.src,
 }))`
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   margin: 0 auto;
   margin-bottom: 70px;
   background-size: cover;
   background-repeat: no-repeat, repeat;
-  background-attachment: fixed;
   background-position: center;
   background-blend-mode: overlay;
   overflow: hidden;
@@ -69,26 +83,23 @@ export const Image = styled.img.attrs(props => ({
   object-fit:cover;
   object-position:50% 50%;
  }
- @media (min-width: 350px) {
-  width: 100%;
-  height: 100%;
-  object-fit:cover;
-  object-position:50% 50%;
- }
+
  @media (min-width: 380px) {
   width: 70%;
   height: 100%;
   object-fit:cover;
   object-position:50% 50%;
  }
- @media (min-width: 520px) {
-  width: 70%;
+ 
+ 
+ @media (min-width: 820px) {
+  width: 50%;
   height: 100%;
   object-fit:cover;
   object-position:50% 50%;
  }
- @media (min-width: 820px) {
-  width: 50%;
+ @media (min-width: 999px) {
+  margin: 0 auto;
   height: 100%;
   object-fit:cover;
   object-position:50% 50%;
@@ -104,18 +115,19 @@ text-align: center;
 color:white;
 font-size: 40px;
 line-height: 60px;
-
-
-
-
 `;
+
+
 export const MainContainerTitleProject = styled.div`
 display: flex;
 height: 60px;
+`;
 
 
-
-
+export const ProjectsList = styled.div`
+display: flex;
+justify-content: center;
+flex-direction: column;
 `;
 
 export const TechnologiesInfo = styled.p`
@@ -123,7 +135,6 @@ color: black;
 margin-bottom:50px;
 font-size: 12px;
 color: #A9A9A9;
-
 `;
 
 export const LinkToProjectOne = styled.a`
@@ -143,9 +154,9 @@ text-decoration: none;
   text-decoration: underline;
 
 }
-
-
 `;
+
+
 export const LinkToProjectTwo = styled.a`
 font-size: 20px;
 color: #A9A9A9;
@@ -155,7 +166,6 @@ justify-content: center;
 align-items: center;
 width: 20%;
 text-decoration: none;
-
 
 
 &:hover {

@@ -17,7 +17,7 @@ const IconsArrayHardSkills = [
       },
       {   id: 4,
           icon: faGithub,
-          description: "I am happy to use Github"
+          description: "I like to use Github for version control"
       },
       {   id: 5,
           icon: faHtml5,
@@ -45,7 +45,7 @@ const IconsArrayHardSkills = [
       },
       {   id: 11,
           isAnotherPackageIcons: true,
-          description: "I style quite a deal thanks styled components!"
+          description: "I style quite a deal thanks styled components"
       },
       {   id: 12,
           icon: faSass,
