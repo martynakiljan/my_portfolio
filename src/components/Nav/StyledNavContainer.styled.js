@@ -9,7 +9,7 @@ export const NavSection = styled.nav`
   top: 0;
   justify-content: space-between;
   align-items: center;
-  background-color: ${({ theme }) => theme.mainColor};
+  background-color: white;
   width: 100%;
   height: 10vh;
   
