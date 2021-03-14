@@ -1,5 +1,5 @@
 import React from 'react';
-import myphoto from '../../images/myphoto.png'
+import myphoto from '../../Data/images/myphoto.png'
 import Title from '../Titles/Title'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMountain, faGlobeAmericas, faPizzaSlice} from "@fortawesome/free-solid-svg-icons";
