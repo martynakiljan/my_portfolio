@@ -60,7 +60,8 @@ My next small project from React   :arrow_right: :arrow_right: :arrow_right: 
 
 ------
 
-![Zrzut ekranu 2021-03-14 o 18 59 33](https://user-images.githubusercontent.com/59742201/111078823-ac73f080-84f7-11eb-8d08-d151f8e096e2.png)
+![Zrzut ekranu 2021-03-14 o 18 45 03](https://user-images.githubusercontent.com/59742201/111078888-f52ba980-84f7-11eb-8c5a-02ae85030cbf.png)
+
 
 ------
 
