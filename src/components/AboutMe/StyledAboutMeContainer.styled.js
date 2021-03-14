@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const AboutMeSection = styled.section`
  margin-bottom: 100px;
+ margin-top: 120px;
  color: black;
  font-size: ${({ theme }) => theme.fontSize.text};
 `;
