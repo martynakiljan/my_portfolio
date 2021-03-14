@@ -5,8 +5,8 @@
 
 ----
 
-* :collision: I created my little portfolio to show some projects that I have done.
-Portfolio - page about me... :collision: *
+ :collision: I created my little portfolio to show some projects that I have done.
+Portfolio - page about me... :collision: 
 
 
 -------
@@ -14,17 +14,17 @@ Portfolio - page about me... :collision: *
 <h3>What did I use in the project? What have I learned?</h3>
 
 
-:red_circle: I practiced the skills I had learned so far
+:red_circle:  I practiced the skills I had learned so far
 
-:red_circle: I practiced the JS Library -   [REACT](https://reactjs.org/)
+:red_circle:  I practiced the JS Library -   [REACT](https://reactjs.org/)
 
-:red_circle:[HOOKS](https://reactjs.org/docs/hooks-overview.html)
+:red_circle:  [HOOKS](https://reactjs.org/docs/hooks-overview.html)
 
-:red_circle: [REACT COMPONENTS](https://reactjs.org/docs/react-component.html)
+:red_circle:  [REACT COMPONENTS](https://reactjs.org/docs/react-component.html)
 
-:red_circle: Styling components with [SYLED COMPONENTS](https://styled-components.com/)
+:red_circle:  Styling components with [SYLED COMPONENTS](https://styled-components.com/)
 
-:red_circle: [REACT COMPOSITION](https://reactjs.org/docs/composition-vs-inheritance.html)
+:red_circle:  [REACT COMPOSITION](https://reactjs.org/docs/composition-vs-inheritance.html)
 
 
 *I used [EMAILJS](https://www.emailjs.com/docs/) for the form
