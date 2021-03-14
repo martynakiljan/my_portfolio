@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+<h1> My portfolio </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+>from the series: I show you what I have learned so far  :muscle:
 
-In the project directory, you can run:
+----
 
-### `npm start`
+ :collision: I created my little portfolio to show some projects that I have done.
+Portfolio - page about me... :collision: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-------
 
-### `npm test`
+<h3>What did I use in the project? What have I learned?</h3>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+:red_circle:  I practiced the skills I had learned so far
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+:red_circle:  I practiced the JS Library -   [REACT](https://reactjs.org/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+:red_circle:  [HOOKS](https://reactjs.org/docs/hooks-overview.html)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+:red_circle:  [REACT COMPONENTS](https://reactjs.org/docs/react-component.html)
 
-### `npm run eject`
+:red_circle:  Styling components with [SYLED COMPONENTS](https://styled-components.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+:red_circle:  [REACT COMPOSITION](https://reactjs.org/docs/composition-vs-inheritance.html)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+*I used [EMAILJS](https://www.emailjs.com/docs/) for the form
+It works in such a way that the website connects to this service thanks to the API and it sends messages.*
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-----
+<h3>How to open a file? :eyes: </h3>
 
-## Learn More
+* On the right side you will find the "clone or download" button - click it.
+* An item should appear with the "Download ZIP" option - click again.)
+* Now you just need to unpack the downloaded file and open it in your favorite editor.
+* you must enter the appropriate folder (command "cd" + file name)
+* you must to install all packages via *npm install*
+* then you can start *npm start*
+----
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h3>do you want to watch it live? </h3>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+:arrow_right: :arrow_right:   [click me](http://martynakiljan.github.io/my_portfolio) :arrow_left: :arrow_left:
 
-### Code Splitting
+----
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+:computer: TECHNOLOGIES : HTML, CSS , REACT, NPM, STYLED COMPONENTS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+----
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+My next small project from React   :arrow_right: :arrow_right: :arrow_right: [CLICK ME ](https://github.com/martynakil/-form---uploading-a-CSV-file-in-JS)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+:mag_right: :mag_right: see what it looks like:
 
-### Deployment
+------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Zrzut ekranu 2021-03-14 o 18 45 03](https://user-images.githubusercontent.com/59742201/111078888-f52ba980-84f7-11eb-8c5a-02ae85030cbf.png)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+------
+
+![Zrzut ekranu 2021-03-14 o 18 59 09](https://user-images.githubusercontent.com/59742201/111078843-c1e91a80-84f7-11eb-808f-7a1ae5ee2a3c.png)
+
+------
+
+![Zrzut ekranu 2021-03-14 o 18 59 22](https://user-images.githubusercontent.com/59742201/111078850-cc0b1900-84f7-11eb-86bb-6d369f78d472.png)
+
+------
+
+![Zrzut ekranu 2021-03-14 o 18 59 33](https://user-images.githubusercontent.com/59742201/111078867-dd542580-84f7-11eb-854f-53be10f9eed7.png)
+
+
+
