@@ -4,7 +4,7 @@ const IconsArraySoftSkills = [
     
     {   id: 13,
         icon: faTasks,
-        description: "If I undertake a task, I always try to finish it.",
+        description: "If I undertake the task I try my best to finish it.",
     },
     {   id: 14,
         icon: faGraduationCap,

@@ -13,6 +13,7 @@ const Projects = () => {
      
         return (
           <Project
+          key={project}
           id = {project.id}
           name = {project.project_name}
           description = {project.project_description}

@@ -42,19 +42,12 @@ align-items:center;
 export const ContainerForProject = styled.div`
 margin-top: 100px;
 width: 100%;
-${({ isVisible }) => isVisible && `
-   display: none;
-`}
 
-
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   height: 100%;
   object-fit:cover;
   object-position:50% 50%;
-
-  ${({ isVisible }) => isVisible && `
-   display: block;
-  `}
+  display: ${props => props.isVisible ? "none" : "block"}
 
  }
 
@@ -66,7 +59,7 @@ export const Image = styled.img.attrs(props => ({
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 70px;
   background-size: cover;
@@ -77,7 +70,7 @@ export const Image = styled.img.attrs(props => ({
   height: 400px;
 
 
- @media (max-width: 350px) {
+ @media (max-width: 379px) {
   width: 100%;
   height: 100%;
   object-fit:cover;
@@ -85,13 +78,18 @@ export const Image = styled.img.attrs(props => ({
  }
 
  @media (min-width: 380px) {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  object-position:50% 50%;
+ }
+
+ @media (min-width: 420px) {
   width: 70%;
   height: 100%;
   object-fit:cover;
   object-position:50% 50%;
  }
- 
- 
  @media (min-width: 820px) {
   width: 50%;
   height: 100%;

@@ -32,11 +32,11 @@ class ButtonBackToTop extends React.Component {
       onClick={() => { this.scrollToTop(); }}>
     
 
-           <FontAwesomeIcon
-             className="iconFontAwesome--backToTop"
-             href="#home"
-             icon={faChevronUp}          
-             />
+      <FontAwesomeIcon
+        className="iconFontAwesome--backToTop"
+        href="#home"
+        icon={faChevronUp}          
+        />
 
     </StyledButtonBackToTop>
     )

@@ -22,7 +22,7 @@ const Skills = () => {
 
 
     const handleClick = e => {
-
+        console.log('klik')
         const index = parseInt(e.target.id, 0);
         if (index !== active) {
         setActive(index);
@@ -86,6 +86,7 @@ const Skills = () => {
             return (
                    
             <FontAwesomeIcon
+            
             icon={item.icon}
             description = {item.description}
             onMouseMove={handleClick}

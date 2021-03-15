@@ -24,7 +24,12 @@ return (
       <Title>About me</Title>
       <Image src={myphoto} alt='my photo'/>
       
-      <TextAboutMe>My name is Martyna. I'm currently working in a restaurant, which has happened to me that I absolutely want to change industries. I saw an ad for making web pages, it made me curious. I bought one Udemy course, then a second, then a third ... and that's how it started. After a few courses, I realized that I needed a mentor and for 8 months I have been studying under the supervision of an experienced teacher 
+      <TextAboutMe>
+      My name is Martyna. My current job circumstances forced me to change the work industry. I am currently working as a waitress in a restaurant, although I enjoy the job, I know that I don’t want to run around with plates for the rest of my life. Accidentally, I came across an advertisement for creating websites. Out of curiosity I bought the ‘web developer from scratch’ course and completely lost myself in it. I’ve been studying for 1.5 years. For 7 months I’ve been learning by myself and for 8 months I’ve been learning under the supervision of an experienced mentor. Sometimes it was very hard to work in restaurant, not social hours, while studying and learning programming but it was for sure worth it. Now it's time to look for an apprenticeship ...
+      <br/>
+      <br/>
+      I want to continue my education!ツ
+      <br/>
       <br/>
       <br/>
       <TextAbourtMeSecondary>and so besides</TextAbourtMeSecondary>
