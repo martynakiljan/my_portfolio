@@ -42,9 +42,6 @@ const Skills = () => {
             size="50px"
             margin= "5px"
             description = {data.description}
-            onMouseEnter={handleClick}
-            active={active === data.id}
-            id={data.id}
             className="iconFontAwesome--skill icon"
             fixedWidth
             />
@@ -60,14 +57,15 @@ const Skills = () => {
           onMouseEnter={handleClick}
           className="span"
           active={active === data.id}
-          id={data.id}
-          >  <SiRedux
-          size="35px"
-          margin= "5px"
-          description = {data.description}
-          className="iconFontAwesome--skill icon"
-          fixedWidth
-          />  </span>
+          id={data.id}>  
+            <SiRedux
+            size="35px"
+            margin= "5px"
+            description = {data.description}
+            className="iconFontAwesome--skill icon"
+            fixedWidth
+            />  
+          </span>
 
             )
 
@@ -79,16 +77,13 @@ const Skills = () => {
          className="span"
          active={active === data.id}
          id={data.id}>
-            <FontAwesomeIcon
+          <FontAwesomeIcon
             icon={data.icon}
             size="20px"
             description = {data.description}
-            onMouseEnter={handleClick}
-            active={active === data.id}
-            id={data.id}
             className="iconFontAwesome--skill icon"
             fixedWidth
-            />
+          />
          </span>
 
         );
@@ -99,16 +94,20 @@ const Skills = () => {
         const renderIconsSoftSkills = () => {
          return IconsArraySoftSkills.map(item=> {
             return (
-                   
-            <FontAwesomeIcon
-            icon={item.icon}
-            description = {item.description}
+          <span
+            className="span"
             onMouseEnter={handleClick}
             active={active === item.id}
-            id={item.id}
-            className="iconFontAwesome--skill"
-            fixedWidth
-            />
+            id={item.id}>
+             <FontAwesomeIcon
+              icon={item.icon}
+              description = {item.description}
+              className="iconFontAwesome--skill"
+              fixedWidth
+              />
+          </span>
+                     
+           
             )
          })
         }

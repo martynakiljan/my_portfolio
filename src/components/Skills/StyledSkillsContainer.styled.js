@@ -108,7 +108,7 @@ export const DescriptionForSkill = styled.p`
       width: 100%;
       padding: 10px 0 10px 0;
       top: -40px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       color: ${({ theme }) => theme.mainColorPastel};
 
       `};

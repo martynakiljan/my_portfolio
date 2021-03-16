@@ -22,29 +22,29 @@ const Project = ({id, name, description, live, urlcode, img, technologies, isVis
     <>   
    {
       <ContainerForProject isVisible ={isVisible}>
-      <MainContainerTitleProject>
-      <IdOfProject>{id}</IdOfProject>
-      <NameOfProject>{name}</NameOfProject>
-      </MainContainerTitleProject>
-      <DescriptionOfProject >{description}</DescriptionOfProject>
-      <TechnologiesInfo>Technologies: {technologies}</TechnologiesInfo>
-      <Image  src={img} alt="imgproject"/>
-      
-      <ContainerForUrl>
-      <LinkToProjectOne
-        href={live}
-        >
-        {' '}
-        Live
-      </LinkToProjectOne>
+        <MainContainerTitleProject>
+          <IdOfProject>{id}</IdOfProject>
+          <NameOfProject>{name}</NameOfProject>
+        </MainContainerTitleProject>
+          <DescriptionOfProject >{description}</DescriptionOfProject>
+          <TechnologiesInfo>Technologies: {technologies}</TechnologiesInfo>
+        <Image  src={img} alt="imgproject"/>
+        
+        <ContainerForUrl>
+          <LinkToProjectOne
+            href={live}
+            >
+            {' '}
+            Live
+          </LinkToProjectOne>
 
-      <LinkToProjectTwo
-        href={urlcode}
-        >
-        {' '}
-        Code{' '}
-      </LinkToProjectTwo>
-      </ContainerForUrl>
+          <LinkToProjectTwo
+            href={urlcode}
+            >
+            {' '}
+            Code{' '}
+          </LinkToProjectTwo>
+        </ContainerForUrl>
     
     </ContainerForProject>
 
