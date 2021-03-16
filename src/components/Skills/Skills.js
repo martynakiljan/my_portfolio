@@ -35,10 +35,12 @@ const Skills = () => {
             return (
           <span
           onMouseEnter={handleClick}
+          className="span"
           active={active === data.id}
           id={data.id}>
               <SiStyledComponents
             size="50px"
+            margin= "5px"
             description = {data.description}
             onMouseEnter={handleClick}
             active={active === data.id}
@@ -56,10 +58,12 @@ const Skills = () => {
             return (
           <span
           onMouseEnter={handleClick}
+          className="span"
           active={active === data.id}
           id={data.id}
           >  <SiRedux
           size="35px"
+          margin= "5px"
           description = {data.description}
           className="iconFontAwesome--skill icon"
           fixedWidth
