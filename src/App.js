@@ -6,6 +6,8 @@ import {theme} from './theme/mainTheme'
 import GlobalStyle from '../src/theme/GlobalStyle'
 import BeatLoader from "react-spinners/BeatLoader";
 import './style/App.css'
+import AnimatedCursor from "react-animated-cursor"
+
 
 const override = css`
  display: flex;
@@ -38,6 +40,14 @@ function App() {
       <>
       <GlobalStyle/>
        <ThemeProvider theme={theme}>
+        <AnimatedCursor
+        innerSize={8}
+        outerSize={8}
+        color='193, 11, 111'
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={5}
+        />
          <Portfolio/>
        </ThemeProvider>
        </>

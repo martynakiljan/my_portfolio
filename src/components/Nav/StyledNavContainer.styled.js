@@ -87,7 +87,7 @@ const moveTop = keyframes`
 
 export const  StyledButtonBackToTop = styled.a`
     position: fixed;
-    bottom: -48px;
+    bottom: -47px;
     right: -50px;
     display: flex;
     flex-flow: column;

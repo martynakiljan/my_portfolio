@@ -15,7 +15,6 @@ const MenuLink = styled.a`
 
 
 const MenuCloseElem = styled.a`
-
     text-align: center;
     color: black;
     width: 100%;

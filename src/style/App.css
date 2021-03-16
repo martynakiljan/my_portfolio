@@ -53,7 +53,7 @@
 .iconFontAwesome--backToTop {
   color: white;
   font-size: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .iconFontAwesome--form {
@@ -94,6 +94,7 @@
 }
 
 .span {
+  display: inline-block;
   padding: 20px;
   z-index: 99;
 }

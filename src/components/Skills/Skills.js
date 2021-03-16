@@ -33,19 +33,19 @@ const Skills = () => {
           if(data.isAnotherPackageIcons) {
                     
             return (
-          <span
-          onMouseEnter={handleClick}
-          className="span"
-          active={active === data.id}
-          description = {data.description}
-          id={data.id}>
-              <SiStyledComponents
-            size="50px"
-            margin= "5px"
-            className="iconFontAwesome--skill icon"
-            fixedWidth
-            />
-          </span>
+              <span
+              onMouseEnter={handleClick}
+              className="span"
+              active={active === data.id}
+              description = {data.description}
+              id={data.id}>
+                <SiStyledComponents
+                size="50px"
+                margin= "5px"
+                className="iconFontAwesome--skill icon"
+                fixedWidth
+                />
+               </span>
             )
 
           }
