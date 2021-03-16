@@ -21,7 +21,7 @@ const Skills = () => {
 
     const handleClick = e => {
         console.log('klik')
-        const index = parseInt(e.target.id, 0);
+        const index = parseInt(e.currentTarget.id, 0);
         if (index !== active) {
         setActive(index);
         }
@@ -33,14 +33,12 @@ const Skills = () => {
           if(data.isAnotherPackageIcons) {
                     
             return (
-           <div
-           onMouseEnter={handleClick}
+              <span
+              onMouseEnter={handleClick}
               className="span"
               active={active === data.id}
               description = {data.description}
               id={data.id}>
-                <span
-              >
                 <SiStyledComponents
                 size="50px"
                 margin= "5px"
@@ -48,7 +46,6 @@ const Skills = () => {
                 fixedWidth
                 />
                </span>
-           </div>
             )
 
           }
@@ -56,14 +53,12 @@ const Skills = () => {
         if(data.isReactIcon) {
             
             return (
-       <div
-       onMouseEnter={handleClick}
-       className="span"
-       active={active === data.id}
-       description = {data.description}
-       id={data.id}>
-            <span
-       >  
+          <span
+         onMouseEnter={handleClick}
+          className="span"
+          active={active === data.id}
+          description = {data.description}
+          id={data.id}>  
             <SiRedux
             size="35px"
             margin= "5px"
@@ -71,21 +66,18 @@ const Skills = () => {
             fixedWidth
             />  
           </span>
-       </div>
 
             )
 
         }
         return (
         
-        <div   
-        onMouseEnter={handleClick}
-        className="span"
-        active={active === data.id}
-        description = {data.description}
-        id={data.id}>
-           <span>
-      
+         <span
+         onMouseEnter={handleClick}
+         className="span"
+         active={active === data.id}
+         description = {data.description}
+         id={data.id}>
           <FontAwesomeIcon
             icon={data.icon}
             size="20px"
@@ -93,7 +85,6 @@ const Skills = () => {
             fixedWidth
           />
          </span>
-        </div>
 
         );
                
@@ -103,8 +94,7 @@ const Skills = () => {
         const renderIconsSoftSkills = () => {
          return IconsArraySoftSkills.map(item=> {
             return (
-         <div>
-            <span
+          <span
             className="span"
             onMouseEnter={handleClick}
             active={active === item.id}
@@ -116,7 +106,6 @@ const Skills = () => {
               fixedWidth
               />
           </span>
-         </div>
                      
            
             )
