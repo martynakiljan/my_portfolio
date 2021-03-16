@@ -33,12 +33,14 @@ const Skills = () => {
           if(data.isAnotherPackageIcons) {
                     
             return (
-              <span
-              onMouseEnter={handleClick}
+           <div
+           onMouseEnter={handleClick}
               className="span"
               active={active === data.id}
               description = {data.description}
               id={data.id}>
+                <span
+              >
                 <SiStyledComponents
                 size="50px"
                 margin= "5px"
@@ -46,6 +48,7 @@ const Skills = () => {
                 fixedWidth
                 />
                </span>
+           </div>
             )
 
           }
@@ -53,12 +56,14 @@ const Skills = () => {
         if(data.isReactIcon) {
             
             return (
-          <span
-         onMouseEnter={handleClick}
-          className="span"
-          active={active === data.id}
-          description = {data.description}
-          id={data.id}>  
+       <div
+       onMouseEnter={handleClick}
+       className="span"
+       active={active === data.id}
+       description = {data.description}
+       id={data.id}>
+            <span
+       >  
             <SiRedux
             size="35px"
             margin= "5px"
@@ -66,18 +71,21 @@ const Skills = () => {
             fixedWidth
             />  
           </span>
+       </div>
 
             )
 
         }
         return (
         
-         <span
-         onMouseEnter={handleClick}
-         className="span"
-         active={active === data.id}
-         description = {data.description}
-         id={data.id}>
+        <div   
+        onMouseEnter={handleClick}
+        className="span"
+        active={active === data.id}
+        description = {data.description}
+        id={data.id}>
+           <span>
+      
           <FontAwesomeIcon
             icon={data.icon}
             size="20px"
@@ -85,6 +93,7 @@ const Skills = () => {
             fixedWidth
           />
          </span>
+        </div>
 
         );
                
@@ -94,7 +103,8 @@ const Skills = () => {
         const renderIconsSoftSkills = () => {
          return IconsArraySoftSkills.map(item=> {
             return (
-          <span
+         <div>
+            <span
             className="span"
             onMouseEnter={handleClick}
             active={active === item.id}
@@ -106,6 +116,7 @@ const Skills = () => {
               fixedWidth
               />
           </span>
+         </div>
                      
            
             )
