@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from './Project';
 import Title from '../Titles/Title'
-import {ProjectsSection} from './StyledProjectsContainer.styled'
+import {ProjectsSection, InfoForProjects, UrlToGithub} from './StyledProjectsContainer.styled'
 import projectsImages from '../../Data/Projects/DataprojectsArray'
 
 

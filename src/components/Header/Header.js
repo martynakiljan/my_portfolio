@@ -3,7 +3,7 @@ import React from 'react';
 import { Typewriter } from 'react-typewriting-effect'
 import {
   MainTitle,
-  Div, 
+  BoxForSecondaryHeaderText,
   DecorativeLine, 
   Dot, 
   HeaderSection,
@@ -18,9 +18,9 @@ const Header = () => {
 
         <MainTitle> he </MainTitle>
 
-        <Div>
+        <BoxForSecondaryHeaderText>
             <MainTitle secondary> llo <Dot/> </MainTitle>
-        </Div>
+        </BoxForSecondaryHeaderText>
 
         <ParentForTypewriter>
         <Typewriter

@@ -35,7 +35,7 @@ export const MainTitle = styled.h1`
 `;
 
 
-export const Div = styled.div`
+export const BoxForSecondaryHeaderText = styled.div`
   display: flex;
   width: 100%;
 

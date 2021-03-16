@@ -82,7 +82,8 @@ class Nav extends React.Component{
           <Menu  />
           )}
       
-        <ButtonBackToTop scrollStepInPx={50} delayInMs={50} /> 
+           <ButtonBackToTop />
+
                   
           </BoxForIcons>
         </NavSection>

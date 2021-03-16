@@ -6,7 +6,7 @@ const FixedPosition = css`
     }
 `;
 
-const MenuLinkElem = styled.a`
+const MenuLink = styled.a`
     &:hover,
     &:focus {
         text-decoration: underline;
@@ -22,7 +22,7 @@ const MenuCloseElem = styled.a`
  
 `;
 
-const MenuListElem = styled.ul`
+const MenuList = styled.ul`
 
     width: 100%;
     list-style: none;
@@ -30,9 +30,9 @@ const MenuListElem = styled.ul`
     min-height: 100px;
 `;
 
-const MenuListItemElem = styled.li``;
+const MenuListItem = styled.li``;
 
-const MenuElem = styled.nav`
+const MenuContainer = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,9 +77,9 @@ const MenuToggleElem = styled.a`
 
 export {
     MenuCloseElem,
-    MenuElem,
-    MenuListElem,
-    MenuListItemElem,
-    MenuLinkElem,
+    MenuContainer,
+    MenuList,
+    MenuListItem,
+    MenuLink,
     MenuToggleElem
 };

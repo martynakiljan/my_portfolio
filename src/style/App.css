@@ -1,5 +1,4 @@
 
-  
 .iconFontAwesome--nav {
   color: 	#505050;
   font-size: 37px;
@@ -79,7 +78,6 @@
   color: #938E9B;
 }
 
-
 .iconFontAwesome--project {
   font-size: 45px;
   margin: 20px;  
@@ -87,7 +85,14 @@
 
 .iconFontAwesome--menu {
   font-size: 35px;
-
-   
+  
 }
 
+.scroll {
+  background-color: #FF9292;
+  color: white;
+}
+
+.span {
+  padding: 20px;
+}

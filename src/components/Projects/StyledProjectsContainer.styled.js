@@ -119,7 +119,19 @@ line-height: 60px;
 export const MainContainerTitleProject = styled.div`
 display: flex;
 height: 60px;
+
+
 `;
+export const InfoForProjects = styled.p`
+margin-top: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+
+`;
+
 
 
 export const ProjectsList = styled.div`
@@ -136,7 +148,7 @@ color: #A9A9A9;
 `;
 
 export const LinkToProjectOne = styled.a`
-
+margin-top: 40px;
 font-size: 20px;
 color: #A9A9A9;
 display: flex;
@@ -144,30 +156,37 @@ left: 0;
 justify-content: center;
 align-items: center;
 width: 20%;
-height: 150px;
-padding: 50px;
+padding: 0 30 0 30px;
+border: 2px solid #FF9292;
+padding: 5px;
 text-decoration: none;
+background-color: white;
 
 &:hover {
-  text-decoration: underline;
+  color: #505050;
 
 }
 `;
 
 
 export const LinkToProjectTwo = styled.a`
+margin-top: 40px;
 font-size: 20px;
 color: #A9A9A9;
 display: flex;
 left: 0;
 justify-content: center;
+margin-left: 10px;
+padding: 5px;
+border: 2px solid #FF9292;
 align-items: center;
 width: 20%;
 text-decoration: none;
+background-color: white;
+
 
 
 &:hover {
-  text-decoration: underline;
-
+ color: #505050;
 }
 `;

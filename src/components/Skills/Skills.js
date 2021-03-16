@@ -15,8 +15,6 @@ import '../../style/App.css'
 
 
 
-
-
 const Skills = () => {
     const [active, setActive] = useState(0);
 
@@ -35,15 +33,20 @@ const Skills = () => {
           if(data.isAnotherPackageIcons) {
                     
             return (
-            <SiStyledComponents
+          <span
+          onMouseEnter={handleClick}
+          active={active === data.id}
+          id={data.id}>
+              <SiStyledComponents
             size="50px"
             description = {data.description}
-            onMouseMove={handleClick}
+            onMouseEnter={handleClick}
             active={active === data.id}
             id={data.id}
             className="iconFontAwesome--skill icon"
             fixedWidth
             />
+          </span>
             )
 
           }
@@ -51,30 +54,38 @@ const Skills = () => {
         if(data.isReactIcon) {
             
             return (
-            <SiRedux
-            size="35px"
-            description = {data.description}
-            onMouseMove={handleClick}
-            active={active === data.id}
-            id={data.id}
-            className="iconFontAwesome--skill icon"
-            fixedWidth
-            />       
+          <span
+          onMouseEnter={handleClick}
+          active={active === data.id}
+          id={data.id}
+          >  <SiRedux
+          size="35px"
+          description = {data.description}
+          className="iconFontAwesome--skill icon"
+          fixedWidth
+          />  </span>
+
             )
 
         }
         return (
         
+         <span
+         onMouseEnter={handleClick}
+         className="span"
+         active={active === data.id}
+         id={data.id}>
             <FontAwesomeIcon
             icon={data.icon}
             size="20px"
             description = {data.description}
-            onMouseMove={handleClick}
+            onMouseEnter={handleClick}
             active={active === data.id}
             id={data.id}
             className="iconFontAwesome--skill icon"
             fixedWidth
             />
+         </span>
 
         );
                
@@ -86,10 +97,9 @@ const Skills = () => {
             return (
                    
             <FontAwesomeIcon
-            
             icon={item.icon}
             description = {item.description}
-            onMouseMove={handleClick}
+            onMouseEnter={handleClick}
             active={active === item.id}
             id={item.id}
             className="iconFontAwesome--skill"

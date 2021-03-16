@@ -1,35 +1,33 @@
 import React from 'react';
-
 import {
-    MenuElem,
-    MenuListElem,
-    MenuListItemElem,
-    MenuLinkElem,
-   
+    MenuContainer,
+    MenuList,
+    MenuListItem,
+    MenuLink, 
 } from './MenuContainer.styled';
 
 const Menu = () => {
     return (
  
-    <MenuElem >
-    <MenuListElem >
-        <MenuListItemElem>
-            <MenuLinkElem href="#home">home</MenuLinkElem>
-        </MenuListItemElem>
-        <MenuListItemElem>
-            <MenuLinkElem href="#aboutme">about me</MenuLinkElem>
-        </MenuListItemElem>
-        <MenuListItemElem>
-            <MenuLinkElem  href="#projects">projects</MenuLinkElem>
-        </MenuListItemElem>
-        <MenuListItemElem>
-            <MenuLinkElem href="#skills">skills</MenuLinkElem>
-        </MenuListItemElem>
-        <MenuListItemElem>
-            <MenuLinkElem href="#contact">contact</MenuLinkElem>
-        </MenuListItemElem>
-    </MenuListElem>
-    </MenuElem>
+    <MenuContainer>
+    <MenuList >
+        <MenuListItem>
+            <MenuLink href="#home">home</MenuLink>
+        </MenuListItem>
+        <MenuListItem>
+            <MenuLink href="#aboutme">about me</MenuLink>
+        </MenuListItem>
+        <MenuListItem>
+            <MenuLink  href="#projects">projects</MenuLink>
+        </MenuListItem>
+        <MenuListItem>
+            <MenuLink href="#skills">skills</MenuLink>
+        </MenuListItem>
+        <MenuListItem>
+            <MenuLink href="#contact">contact</MenuLink>
+        </MenuListItem>
+    </MenuList>
+    </MenuContainer>
 
  
     );

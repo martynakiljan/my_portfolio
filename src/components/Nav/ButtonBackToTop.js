@@ -8,39 +8,86 @@ import { faChevronUp} from "@fortawesome/free-solid-svg-icons";
 class ButtonBackToTop extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
-      intervalId: 0
+      is_visible: false
     };
   }
 
-  scrollStep() {
-    if (window.pageYOffset === 0) {
-      clearInterval(this.state.intervalId);
+  componentDidMount() {
+    var scrollComponent = this;
+    document.addEventListener("scroll", function(e) {
+      scrollComponent.toggleVisibility();
+    });
+  }
+
+  toggleVisibility() {
+    if (window.pageYOffset > 300) {
+      this.setState({
+        is_visible: true
+      });
+    } else {
+      this.setState({
+        is_visible: false
+      });
     }
-    window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
   }
 
   scrollToTop() {
-    let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
-    this.setState({ intervalId: intervalId });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+  render() {
+    const { is_visible } = this.state;
+    return (
+      <>
+        {is_visible && (
+
+          <>
+              <StyledButtonBackToTop onClick={() => this.scrollToTop()}>
+          
+              <FontAwesomeIcon
+                className="iconFontAwesome--backToTop"
+                href="#home"
+                icon={faChevronUp}          
+                />
+
+             </StyledButtonBackToTop>
+
+          </>
+        )}
+      </>
+ 
+
+    )
+
+
+
+
+
+
   }
 
-  render() {
-    return (
-    <StyledButtonBackToTop title='Back to top' className={this.props.scrollY > (window.innerHeight - (window.innerHeight / 2)) ? 'scroll' : 'scroll hidden'}
-      onClick={() => { this.scrollToTop(); }}>
+
+
+
+
+
+
+    // <StyledButtonBackToTop title='Back to top' className={this.props.scrollY > (window.innerHeight - (window.innerHeight / 2)) ? 'scroll' : 'scroll hidden'}
+    //   onClick={() => { this.scrollToTop(); }}>
     
 
-      <FontAwesomeIcon
-        className="iconFontAwesome--backToTop"
-        href="#home"
-        icon={faChevronUp}          
-        />
+    //   <FontAwesomeIcon
+    //     className="iconFontAwesome--backToTop"
+    //     href="#home"
+    //     icon={faChevronUp}          
+    //     />
 
-    </StyledButtonBackToTop>
-    )
-  }
+    //   </StyledButtonBackToTop>
+    
+  
 }
 
 export default ButtonBackToTop;
