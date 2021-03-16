@@ -93,8 +93,10 @@
   color: white;
 }
 
-.span {
+.btnIcon {
   display: inline-block;
+  background-color: white;
+  border: none;
   padding: 20px;
   z-index: 99;
 }

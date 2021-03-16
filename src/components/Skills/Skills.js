@@ -95,7 +95,7 @@ const Skills = () => {
          return IconsArraySoftSkills.map(item=> {
             return (
           <button
-            className="span"
+            className="btnIcon"
             onMouseEnter={handleClick}
             active={active === item.id}
             description = {item.description}
