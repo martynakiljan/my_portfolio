@@ -37,11 +37,11 @@ const Skills = () => {
           onMouseEnter={handleClick}
           className="span"
           active={active === data.id}
+          description = {data.description}
           id={data.id}>
               <SiStyledComponents
             size="50px"
             margin= "5px"
-            description = {data.description}
             className="iconFontAwesome--skill icon"
             fixedWidth
             />
@@ -54,14 +54,14 @@ const Skills = () => {
             
             return (
           <span
-          onMouseEnter={handleClick}
+         onMouseEnter={handleClick}
           className="span"
           active={active === data.id}
+          description = {data.description}
           id={data.id}>  
             <SiRedux
             size="35px"
             margin= "5px"
-            description = {data.description}
             className="iconFontAwesome--skill icon"
             fixedWidth
             />  
@@ -76,11 +76,11 @@ const Skills = () => {
          onMouseEnter={handleClick}
          className="span"
          active={active === data.id}
+         description = {data.description}
          id={data.id}>
           <FontAwesomeIcon
             icon={data.icon}
             size="20px"
-            description = {data.description}
             className="iconFontAwesome--skill icon"
             fixedWidth
           />
@@ -98,10 +98,10 @@ const Skills = () => {
             className="span"
             onMouseEnter={handleClick}
             active={active === item.id}
+            description = {item.description}
             id={item.id}>
              <FontAwesomeIcon
               icon={item.icon}
-              description = {item.description}
               className="iconFontAwesome--skill"
               fixedWidth
               />
