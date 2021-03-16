@@ -33,7 +33,7 @@ const Skills = () => {
           if(data.isAnotherPackageIcons) {
                     
             return (
-              <span
+              <button
               onMouseEnter={handleClick}
               className="span"
               active={active === data.id}
@@ -45,7 +45,7 @@ const Skills = () => {
                 className="iconFontAwesome--skill icon"
                 fixedWidth
                 />
-               </span>
+               </button>
             )
 
           }
@@ -53,7 +53,7 @@ const Skills = () => {
         if(data.isReactIcon) {
             
             return (
-          <span
+          <button
          onMouseEnter={handleClick}
           className="span"
           active={active === data.id}
@@ -65,14 +65,14 @@ const Skills = () => {
             className="iconFontAwesome--skill icon"
             fixedWidth
             />  
-          </span>
+          </button>
 
             )
 
         }
         return (
         
-         <span
+         <button
          onMouseEnter={handleClick}
          className="span"
          active={active === data.id}
@@ -84,7 +84,7 @@ const Skills = () => {
             className="iconFontAwesome--skill icon"
             fixedWidth
           />
-         </span>
+         </button>
 
         );
                
@@ -94,7 +94,7 @@ const Skills = () => {
         const renderIconsSoftSkills = () => {
          return IconsArraySoftSkills.map(item=> {
             return (
-          <span
+          <button
             className="span"
             onMouseEnter={handleClick}
             active={active === item.id}
@@ -105,7 +105,7 @@ const Skills = () => {
               className="iconFontAwesome--skill"
               fixedWidth
               />
-          </span>
+          </button>
                      
            
             )
