@@ -35,7 +35,7 @@ const Skills = () => {
             return (
               <button
               onMouseEnter={handleClick}
-              className="span"
+              className="btnIcon"
               active={active === data.id}
               description = {data.description}
               id={data.id}>
@@ -54,8 +54,8 @@ const Skills = () => {
             
             return (
           <button
-         onMouseEnter={handleClick}
-          className="span"
+          onMouseEnter={handleClick}
+          className="btnIcon"
           active={active === data.id}
           description = {data.description}
           id={data.id}>  
@@ -74,7 +74,7 @@ const Skills = () => {
         
          <button
          onMouseEnter={handleClick}
-         className="span"
+         className="btnIcon"
          active={active === data.id}
          description = {data.description}
          id={data.id}>

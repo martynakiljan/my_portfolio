@@ -99,4 +99,5 @@
   border: none;
   padding: 20px;
   z-index: 99;
+  outline: none;
 }
