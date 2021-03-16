@@ -4,7 +4,6 @@ import { css } from "@emotion/core";
 import { ThemeProvider } from 'styled-components';
 import {theme} from './theme/mainTheme'
 import GlobalStyle from '../src/theme/GlobalStyle'
-import AnimatedCursor from "react-animated-cursor"
 import BeatLoader from "react-spinners/BeatLoader";
 import './style/App.css'
 
@@ -40,14 +39,6 @@ function App() {
       <GlobalStyle/>
        <ThemeProvider theme={theme}>
          <Portfolio/>
-         <AnimatedCursor
-          innerSize={10}
-          outerSize={8}
-          color='193, 11, 111'
-          outerAlpha={0.2}
-          innerScale={0.7}
-          outerScale={5}
-        />
        </ThemeProvider>
        </>
     }
