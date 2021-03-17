@@ -39,7 +39,7 @@ const MenuContainer = styled.nav`
   top:0;
   left:0;
   width: 100%;
-  max-width: 1024px;
+  max-width: 1050px;
   margin: 0 auto;
   right: 0;
   background-color: white;
