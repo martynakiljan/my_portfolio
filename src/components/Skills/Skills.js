@@ -3,7 +3,7 @@ import Title from '../Titles/Title'
 import IconsArrayHardSkills from '../../Data/Icons/IconsArrayHardSkills'
 import IconsArraySoftSkills from '../../Data/Icons/IconsArraySoftSkills'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { SiRedux, SiStyledComponents} from "react-icons/si";
+import { SiJest, SiRedux, SiStyledComponents} from "react-icons/si";
 import {
     SkillsSection, 
     InfoForSkills,
@@ -65,9 +65,28 @@ const Skills = () => {
             className="iconFontAwesome--skill icon"
             fixedWidth
             />  
+        
           </button>
 
-            )
+          )
+
+        } else if(data.isReactIconTwo) {
+         return (
+          <button
+          onMouseEnter={handleClick}
+          className="btnIcon"
+          active={active === data.id}
+          description = {data.description}
+          id={data.id}>  
+            <SiJest
+            size="35px"
+            margin= "5px"
+            className="iconFontAwesome--skill icon"
+            fixedWidth
+            />  
+        
+          </button>
+         )
 
         }
         return (
@@ -95,7 +114,7 @@ const Skills = () => {
          return IconsArraySoftSkills.map(item=> {
             return (
           <button
-            className="btnIcon"
+            className="btnIcon--soft"
             onMouseEnter={handleClick}
             active={active === item.id}
             description = {item.description}

@@ -1,4 +1,4 @@
-import { faNpm, faJs, faCss3Alt, faGithub, faHtml5 , faReact, faBootstrap, faSass} from "@fortawesome/free-brands-svg-icons"
+import { faNpm, faJs, faCss3Alt, faGithub, faHtml5 , faReact, faBootstrap} from "@fortawesome/free-brands-svg-icons"
 import { faBox, faLaptop } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -48,8 +48,8 @@ const IconsArrayHardSkills = [
           description: "I style quite a deal thanks styled components"
       },
       {   id: 12,
-          icon: faSass,
-          description: "I can use the Sass pre processor"
+          isReactIconTwo: true,
+          description: "I did some tests with JEST"
       }   
     ];
 
