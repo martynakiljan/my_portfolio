@@ -11,7 +11,6 @@ import {
   ContainerForUrl,
   TechnologiesInfo,
   MainContainerTitleProject
-  
 } from './StyledProjectsContainer.styled'
 const Project = ({id, name, description, live, urlcode, img, technologies, isVisible} )=> {
 
@@ -22,12 +21,15 @@ const Project = ({id, name, description, live, urlcode, img, technologies, isVis
     <>   
    {
       <ContainerForProject isVisible ={isVisible}>
+
         <MainContainerTitleProject>
           <IdOfProject>{id}</IdOfProject>
           <NameOfProject>{name}</NameOfProject>
         </MainContainerTitleProject>
+
           <DescriptionOfProject >{description}</DescriptionOfProject>
           <TechnologiesInfo>Technologies: {technologies}</TechnologiesInfo>
+
         <Image  src={img} alt="imgproject"/>
         
         <ContainerForUrl>

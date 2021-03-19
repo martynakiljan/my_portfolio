@@ -1,9 +1,9 @@
 import React from 'react';
-import myphoto from '../../Data/images/myphoto.png'
+import myphoto from '../../data/images/myphoto.png'
 import Title from '../Titles/Title'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMountain, faGlobeAmericas, faPizzaSlice} from "@fortawesome/free-solid-svg-icons";
-import { RandomReveal } from 'react-random-reveal'
+
 import {
       AboutMeSection,
       Image,
@@ -42,7 +42,7 @@ return (
             secondary
             />
             <TextIcon>
-          I am mountain lover!
+             I am mountain lover!
           </TextIcon>
         </Box>
 
@@ -65,12 +65,10 @@ return (
           secondary
           />
           <TextIcon>
-            I can't live without pizza
+          I can't live without pizza
           </TextIcon>
         </Box>
-       
-
-  
+        
       </BoxIcon>
    </AboutMeSection>
  </>

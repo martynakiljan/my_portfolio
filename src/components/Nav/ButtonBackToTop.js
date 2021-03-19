@@ -51,42 +51,18 @@ class ButtonBackToTop extends React.Component {
                 className="iconFontAwesome--backToTop"
                 href="#home"
                 icon={faChevronUp}          
-                />
+               />
 
              </StyledButtonBackToTop>
 
           </>
         )}
       </>
- 
 
     )
 
-
-
-
-
-
   }
 
-
-
-
-
-
-
-    // <StyledButtonBackToTop title='Back to top' className={this.props.scrollY > (window.innerHeight - (window.innerHeight / 2)) ? 'scroll' : 'scroll hidden'}
-    //   onClick={() => { this.scrollToTop(); }}>
-    
-
-    //   <FontAwesomeIcon
-    //     className="iconFontAwesome--backToTop"
-    //     href="#home"
-    //     icon={faChevronUp}          
-    //     />
-
-    //   </StyledButtonBackToTop>
-    
   
 }
 

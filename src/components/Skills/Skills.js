@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Title from '../Titles/Title'
-import IconsArrayHardSkills from '../../Data/Icons/IconsArrayHardSkills'
-import IconsArraySoftSkills from '../../Data/Icons/IconsArraySoftSkills'
+import IconsArrayHardSkills from '../../data/icons/IconsArrayHardSkills'
+import IconsArraySoftSkills from '../../data/icons/IconsArraySoftSkills'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { SiJest, SiRedux, SiStyledComponents} from "react-icons/si";
 import {
@@ -163,27 +163,25 @@ const Skills = () => {
  
  return (
         <>
-       <SkillsSection  id="skills">
-     
-       <Title>My hard skills</Title>
+        <SkillsSection  id="skills">
+      
+          <Title>My hard skills</Title>
 
-       <InfoForSkills>click the icon!</InfoForSkills>
+          <InfoForSkills>click the icon!</InfoForSkills>
 
-       <ContainerForIcons>
-   
-        {renderIconsHardSkills()}
-        {renderDescriptionsHardSkills()}
-        </ContainerForIcons>
-    
-       <Title>My soft skills</Title>
+          <ContainerForIcons>
+            {renderIconsHardSkills()}
+            {renderDescriptionsHardSkills()}
+           </ContainerForIcons>
+      
+         <Title>My soft skills</Title>
 
-        <ContainerForIconsSecondary>
-        {renderIconsSoftSkills()}
-        {renderDescriptionsSoftSkills()}
-        </ContainerForIconsSecondary>
+          <ContainerForIconsSecondary>
+            {renderIconsSoftSkills()}
+            {renderDescriptionsSoftSkills()}
+          </ContainerForIconsSecondary>
 
-       </SkillsSection>
-       
+         </SkillsSection>
         </>
     )
 

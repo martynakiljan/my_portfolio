@@ -23,11 +23,11 @@ const Header = () => {
         </BoxForSecondaryHeaderText>
 
         <ParentForTypewriter>
-        <Typewriter
-            string='I am Martyna, I aspire to be junior front-end developer!'
-            delay={80}
-            cursor='|'   
-          />
+          <Typewriter
+              string='I am Martyna, I aspire to be junior front-end developer!'
+              delay={80}
+              cursor='|'   
+            />
         </ParentForTypewriter>
         
         <DecorativeLine/>
