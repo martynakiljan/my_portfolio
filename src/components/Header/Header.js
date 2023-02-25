@@ -24,7 +24,7 @@ const Header = () => {
 
         <ParentForTypewriter>
           <Typewriter
-              string='I am Martyna, I aspire to be junior front-end developer!'
+              string='I am Martyna, I am junior front-end developer!'
               delay={80}
               cursor='|'   
             />
